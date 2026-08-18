@@ -1,0 +1,1864 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+  <div id="main-slot"></div>
+  <div id="scratch-slot" style="visibility:hidden"></div>
+<template id="introduction">
+
+  <div align="center">
+    <font size="+2"><i><b>Curriculum Architecture for Liberal Arts Mathematics:<br>
+          Enforcing the Formal Foundations of Quantum Bayesian Inference</b></i></font><br>
+    <font size="+1"><i>— A 3-Course Tertiary Extension with Minimal Formality —</i></font>
+  </div>
+  
+  <div align="center" style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 14px; margin: 12px auto; max-width: 580px; font-size: 13px;">
+    <span style="color: #64748b;">Foundational Prerequisite:</span>
+    <a href="https://sharedhallucination.app" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: none; margin-left: 6px;">
+      &larr; Formal Science Basic Curriculum (sharedhallucination.app)
+    </a>
+  </div>
+  <br>
+
+  <h3>Preface &amp; Pedagogical Mission: A Tertiary Extension for Formal Science</h3>
+  <p>
+    Mathematics in higher education has long suffered from a sharp divide. On one side are the heavy calculational
+    workhorses designed for practicing engineers and physicists; on the other are survey courses that all too often
+    retreat into disjointed topics and mechanical algebraic drills.
+  </p>
+  <p>
+    This curriculum &mdash; designed specifically for <b>Liberal Arts Mathematics (LAM)</b> &mdash; serves as a direct
+    <b>tertiary extension of our general formal science foundation</b>. Having established the core principles of formal logic,
+    statements, recursive number trees, and finite inference in our foundational curriculum, LAM has a single, razor-sharp mission:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>Enforcing the rigorous formal foundations of Quantum Bayesian Inference<br>
+    through direct algebra and the nonstandard continuum.</b>
+  </div>
+  <p>
+    We hold immense respect and gratitude for our colleagues in STEM disciplines. To support the vast array of
+    continuous calculation tools used across industry and engineering, standard textbooks must construct the
+    mathematical universe using metric topologies, epsilon-delta limit towers, Lebesgue measure spaces, and Riemann
+    spheres. That apparatus provides the rigorous bedrock necessary for professional practitioners.
+  </p>
+  <p>
+    It is simply that for non-practitioners &mdash; <b>unburdened of the requirement to service continuous calculation
+      engines</b> &mdash; there is an amazingly simpler, cleaner, and more direct path to the exact same underlying
+    mathematical structures: <b>Nonstandard Analysis &amp; Emergent Algebraic Structures</b>.
+  </p>
+
+  <hr>
+
+  <h3>1. Conceptual History: The Four Epochs of Analysis</h3>
+  <p>
+    To understand why nonstandard analysis is so empowering, one must examine how mathematics historically struggled to tame continuous change:
+  </p>
+
+  <ul>
+    <li>
+      <b>Epoch 1: Intuitive Infinitesimals (17th–18th Century) &mdash; <i>Leibniz, Newton, Euler</i>:</b><br>
+      Calculus was co-invented using <b>infinitesimals</b> (<code>dx, dy</code>) &mdash; quantities strictly greater than zero, yet smaller than any positive standard real number. With infinitesimals, derivatives were simple algebraic ratios (<code>dy / dx</code>) and integrals were genuine sums of microscopic rectangles (<code>∫ y dx</code>). Mathematicians solved celestial orbits, fluid mechanics, and wave equations with breathtaking speed, but critics (like Bishop Berkeley) argued that infinitesimals were logically unsound "ghosts of departed quantities."
+    </li>
+    <br>
+    <li>
+      <b>Epoch 2: The Epsilon-Delta Purge (19th Century) &mdash; <i>Cauchy, Weierstrass, Dedekind</i>:</b><br>
+      Fearing foundational inconsistency, 19th-century mathematicians banished infinitesimals. They replaced intuitive algebraic ratios with the real continuum <code>ℝ</code> and dense <b>epsilon-delta (ε-δ) limit definitions</b>:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+        f'(x) = lim (Δx &rarr; 0) [f(x + Δx) - f(x)] / Δx &emsp;&equiv;&emsp; ∀ε &gt; 0 &nbsp; ∃δ &gt; 0 &nbsp; ∀Δx &nbsp; ( 0 &lt; |Δx| &lt; δ &nbsp;&rArr;&nbsp; |[f(x+Δx)-f(x)]/Δx - L| &lt; ε )
+      </div>
+      While logically watertight, this reform erected a massive cognitive barrier, turning intuitive geometric concepts into nested quantifier gymnastics.
+    </li>
+    <br>
+    <li>
+      <b>Epoch 3: The Structural &amp; Topological Escape (Early–Mid 20th Century) &mdash; <i>Hausdorff, Lebesgue, Bourbaki</i>:</b><br>
+      As physics expanded into quantum mechanics and relativity, mathematicians sought to escape the clumsiness of metric <code>ε-δ</code> limits by ascending into <b>pure set-theoretic topology and measure theory</b>:
+      <ul>
+        <li><i>Topological Continuity:</i> <code>∀ U ∈ Topology(Y), &nbsp; f⁻¹(U) ∈ Topology(X)</code> (The preimage of every open set is an open set).</li>
+        <li><i>Lebesgue Integration:</i> Integrated functions by measuring preimage sizes on <code>σ-algebras</code> rather than taking limits of partition meshes.</li>
+      </ul>
+      This abstraction was immensely powerful for functional analysis, but it severely detached continuous mathematics from physical and geometric intuition.
+    </li>
+    <br>
+    <li>
+      <b>Epoch 4: The Nonstandard Synthesis &mdash; <i>Abraham Robinson &amp; John Conway's Number Tree</i>:</b><br>
+      Leibniz's intuitive infinitesimals were given complete, rigorous mathematical foundations through model theory and <b>John Conway's recursive number tree</b>.
+      By observing the continuum scaffold <code>ℝ_ω</code> and complex grid <code>ℂ_ω</code> on the transfinite tree:
+      <ul>
+        <li><b>Infinitesimals (<code>dx = 1/ω</code>)</b> are legitimate numbers born on Day <code>ω</code> of the recursive tree: <code>1/ω = { 0 | 1, 1/2, 1/4, ... }</code>.</li>
+        <li><b>Continuity</b> is halo preservation: <code>x ≈ y &nbsp;&rArr;&nbsp; f(x) ≈ f(y)</code> (nodes differing by transfinite branches stay infinitesimally close).</li>
+        <li><b>Differentiation</b> is pure algebraic division: <code>f'(x) = st(Δy / dx)</code>.</li>
+        <li><b>Integration</b> is genuine discrete addition: <code>∫ f(x) dx = st(∑ f(x) · dx)</code>.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h3>2. Two Pathways to Analysis &amp; The Continuum</h3>
+  <p>
+    The contrast between the classical STEM pathway and our nonstandard liberal arts pathway illustrates how the same
+    deep mathematical realities can be reached with radically less formal overhead:
+  </p>
+
+  <!-- Comparison Diagram: Classical STEM vs. Nonstandard Analysis -->
+  <div style="display: flex; justify-content: center; margin: 25px 0;">
+    <div style="width: 100%; max-width: 680px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320"
+        style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <!-- Header Banner -->
+        <rect x="0" y="0" width="680" height="30" fill="#f1f5f9" rx="8" />
+        <rect x="0" y="20" width="680" height="10" fill="#f1f5f9" />
+        <text x="340" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold"
+          fill="#334155">Two Pathways to Analysis &amp; The Continuum</text>
+
+        <!-- Left Column: Classical STEM Track -->
+        <rect x="25" y="45" width="295" height="255" rx="6" fill="#faf5ff" stroke="#a855f7" stroke-width="1.2" />
+        <text x="172" y="70" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold"
+          fill="#6b21a8">Classical Heavyweight Track</text>
+
+        <rect x="40" y="85" width="265" height="42" rx="4" fill="#ffffff" stroke="#d8b4fe" />
+        <text x="172" y="103" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#581c87">1. Topological Spaces &amp; Sets</text>
+        <text x="172" y="118" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">Unstructured point dust ℝ, open balls, metrics</text>
+
+        <rect x="40" y="135" width="265" height="42" rx="4" fill="#ffffff" stroke="#d8b4fe" />
+        <text x="172" y="153" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#581c87">2. Epsilon-Delta Limit Machinery</text>
+        <text x="172" y="168" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">Nested quantifiers: ∀ε &gt; 0 ∃δ &gt; 0</text>
+
+        <rect x="40" y="185" width="265" height="42" rx="4" fill="#ffffff" stroke="#d8b4fe" />
+        <text x="172" y="203" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#581c87">3. Measure Theory &amp; Preimages</text>
+        <text x="172" y="218" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">σ-algebras, Borel preimages f⁻¹(E) ∈ Σ</text>
+
+        <rect x="40" y="235" width="265" height="52" rx="4" fill="#ffffff" stroke="#d8b4fe" />
+        <text x="172" y="253" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#581c87">4. Complex Analysis &amp; Riemann Spheres</text>
+        <text x="172" y="268" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">Conformal metrics, homotopy &amp; winding indices</text>
+
+        <!-- Right Column: Nonstandard LAM Track -->
+        <rect x="360" y="45" width="295" height="255" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.2" />
+        <text x="507" y="70" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold"
+          fill="#1e40af">Our 3-Course LAM Track</text>
+
+        <rect x="375" y="85" width="265" height="42" rx="4" fill="#ffffff" stroke="#93c5fd" />
+        <text x="507" y="103" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#1e3a8a">1. Linear Algebra (H, +, ·, ⟨·,·⟩)</text>
+        <text x="507" y="118" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#2563eb">Emergent groups, duality (kets/bras), ε₀ safety net</text>
+
+        <rect x="375" y="135" width="265" height="42" rx="4" fill="#ffffff" stroke="#93c5fd" />
+        <text x="507" y="153" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#1e3a8a">2. Analysis 1D (ℝ_ω Continuum)</text>
+        <text x="507" y="168" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#2563eb">Infinitesimals dx = 1/ω, algebraic rates, discrete sums</text>
+
+        <rect x="375" y="185" width="265" height="52" rx="4" fill="#ffffff" stroke="#93c5fd" />
+        <text x="507" y="203" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#1e3a8a">3. Analysis 2D (ℂ_ω Continuum)</text>
+        <text x="507" y="218" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#2563eb">Grid dz = dx + i dy, Cauchy cancellation, Residues</text>
+
+        <rect x="375" y="245" width="265" height="42" rx="4" fill="#f0fdf4" stroke="#86efac" />
+        <text x="507" y="263" text-anchor="middle" font-family="sans-serif" font-size="10.5" font-weight="bold"
+          fill="#166534">★ Quantum Bayesian Inference</text>
+        <text x="507" y="278" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#14532d">Continuous unitary evolution U(t) = e^(-iHt/ħ)</text>
+      </svg>
+      <div style="font-size: 0.85em; color: #64748b; margin-top: 5px;"><i>Figure: Classical Heavyweight Apparatus vs. The Transparent 3-Course LAM Pipeline</i></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>3. The Three Courses of Liberal Arts Mathematics</h3>
+  <p>
+    The LAM curriculum is organized into three cumulative, self-contained courses:
+  </p>
+
+  <ol>
+    <li>
+      <b>Course 1: Linear Algebra &amp; The Inference Space <code>(H, +, ·, ⟨·,·⟩)</code>:</b><br>
+      <ul>
+        <li><b>Emergent Symmetries:</b> Observing Abelian groups <code>(G, +)</code> and fields <code>(F, +, ·)</code> emerging directly from recursive number tree operations without artificial axioms.</li>
+        <li><b>Structure-Preserving Maps:</b> Mapping between operations: <code>f(a ⋆ b) = f(a) ⊙ f(b)</code> (scaling, negation, exponential bridge, angle-to-phase rotations).</li>
+        <li><b>The Countable <code>ε₀</code> Safety Net:</b> Resolving grid leakage via birthday cutoffs; establishing complete algebraic closure at <code>ε₀ = ω^(ω^(...))</code>.</li>
+        <li><b>Vector / Covector Duality (Dirac Bra-Ket):</b> Physical states as vectors (kets <code>|ψ⟩</code>), measurement detectors as covectors (bras <code>⟨ϕ|</code>), and inner products (<code>⟨ϕ|ψ⟩</code>) as Born rule probability amplitudes.</li>
+      </ul>
+    </li>
+    <br>
+    <li>
+      <b>Course 2: Analysis 1D (The Real Nonstandard Continuum <code>ℝ_ω</code>):</b><br>
+      <ul>
+        <li><b>The Core Role of Analysis:</b> Taming continuous change via instantaneous local rates and global accumulation.</li>
+        <li><b>The Hyperfinite Scaffold <code>ℝ_ω</code>:</b> Infinitesimals <code>dx = 1/ω</code>, halos, and the Standard Part function <code>st(x)</code>.</li>
+        <li><b>Differentiation &amp; Integration:</b> Derivatives as direct algebraic division (<code>f'(x) = st(Δy/dx)</code>), integrals as genuine discrete hyperfinite sums (<code>st(∑ f(x)·dx)</code>), and the Fundamental Theorem of Calculus as telescoping cancellation.</li>
+        <li><b>Standard Comparisons:</b> Direct side-by-side comparisons demystifying classical <code>ε-δ</code> limits and topological connectedness alongside our hyperfinite grid march.</li>
+      </ul>
+    </li>
+    <br>
+    <li>
+      <b>Course 3: Analysis 2D (The Complex Nonstandard Continuum <code>ℂ_ω</code>):</b><br>
+      <ul>
+        <li><b>The 2D Complex Grid:</b> The complex continuum as parallel axes <code>ℝ_ω ⊗ ℝ_ω</code> with cell step <code>dz = dx + i·dy</code>.</li>
+        <li><b>Conformal Geometry:</b> Complex differentiability and Cauchy-Riemann equations as infinitesimal square-preservation (scaling and rotating without shearing).</li>
+        <li><b>Discrete Contour Integration:</b> Proving Cauchy's Integral Theorem via 2D discrete cell edge cancellation, Laurent series, and residues.</li>
+        <li><b>The Grand Payoff &mdash; Continuous Quantum Inference:</b> Continuous-time unitary evolution (<code>U(t) = e^(-iHt/ħ)</code>), continuous wavepackets, and physical capstones including <b>Phase Transitions &amp; Lee-Yang Zeros</b> (how complex partition roots pinch the real temperature axis at <code>T_c</code> to create sudden macroscopic freezing and boiling).</li>
+      </ul>
+    </li>
+  </ol>
+
+</template>
+<template id="vectorFoundationsIntro">
+
+  <div align="center">
+    <font size="+2"><i><b>Course 1: Linear Algebra &amp; The Inference Space</b></i></font><br>
+    <font size="+1"><i>— Emergent Groups, Fields, Vector Spaces, Duality &amp; Quantum Inference —</i></font>
+  </div>
+  <br>
+
+  <h3>Preface: Algebraic Structures are Observed, Not Imposed</h3>
+  <p>
+    In standard mathematical presentations, abstract algebra is often introduced top-down as an intimidating list of arbitrary axioms.
+    In this curriculum, we take the opposite, constructive approach: <b>algebraic structures are emergent symmetries directly observed from recursively defined operations on our number trees</b>.
+  </p>
+  <p>
+    We adopt a strict pedagogical discipline:
+  </p>
+  <ol>
+    <li><b>Physics-Free Mathematics First:</b> We first establish all concepts in clean, abstract mathematical notation (<code>(G, ⋆), (F, +, ·), (V, +, ·)</code>, linear maps <code>T : V &rarr; W</code>, and duality <code>f(v)</code>).</li>
+    <li><b>Physical Realizations Second:</b> Once the algebraic geometry is rock-solid, we introduce physical realizations &mdash; such as Dirac bra-ket notation (<code>|ψ⟩, ⟨ϕ|</code>) and quantum state spaces &mdash; as concrete applications.</li>
+  </ol>
+
+  <hr>
+
+  <h3>1. The Transfinite Scale: The Cutoff at ω &amp; The Countable ε₀ Safety Net</h3>
+  <p>
+    Closure is the non-negotiable bedrock of any algebraic structure: when you combine elements, the arithmetic result must stay inside the carrier set.
+  </p>
+  <ul>
+    <li><b>The Wee Cutoff at ω:</b> Our familiar discrete scaffolds <code>ℝ_ω</code> and <code>ℂ_ω</code> represent an arbitrary cutoff at ordinal <code>ω</code> in the recursive tree generation. In the transfinite hierarchy of ordinals, <code>ω</code> is a "wee little thing."</li>
+    <li><b>Grid Leakage:</b> Multiplying fine numbers, dividing, or scaling vectors can produce exact values whose <b>birthdays are strictly greater than <code>ω</code></b> (born on Day <code>ω+1, ω·2, ω^ω</code>). These numbers didn't vanish &mdash; they were simply born on later days in the transfinite calendar!</li>
+    <li><b>The Countable ε₀ Safety Net:</b> By extending our birthday cutoff to the countable fixed-point ordinal <code>ε₀ = ω^(ω^(ω^...))</code> where <code>ω^(ε₀) = ε₀</code>, the carrier set becomes <b>completely algebraically closed</b> &mdash; big enough to support a genuine field.</li>
+    <li><b>Standard Part Resolution:</b> The <b>Standard Part Function <code>st(x)</code></b> casts high-birthday transfinite results back down to their observable shadow on Day <code>ω</code>.</li>
+  </ul>
+
+  <hr>
+
+  <h3>2. Skeletons of Observed Symmetry: Groups &amp; Fields</h3>
+  <p>
+    When arithmetic operations are run recursively on the tree, natural algebraic skeletons emerge:
+  </p>
+
+  <h4>A. The Abelian Group <code>(G, +)</code></h4>
+  <p>
+    Recursive addition on the tree naturally exhibits:
+  </p>
+  <ul>
+    <li><code>x + 0 = 0 + x = x</code> (where <code>0 = { | }</code> labels the root of the tree).</li>
+    <li><code>∃ y : x + y = 0</code> (where <code>y = -x</code> is the bilateral tree reflection).</li>
+    <li>Commutativity (<code>x + y = y + x</code>) and Associativity (<code>(x+y)+z = x+(y+z)</code>).</li>
+  </ul>
+  <p>
+    <i>Generalization:</i> Any collection of objects obeying these observed behaviors forms an <b>Abelian Group <code>(G, +)</code></b>.
+  </p>
+
+  <h4>B. The "Two-Group" Puzzle &amp; The Field <code>(F, +, ·)</code></h4>
+  <p>
+    A remarkable mathematical reality is that <b>you cannot simultaneously fit two full groups onto the exact same carrier set <code>F</code></b>:
+  </p>
+  <ul>
+    <li>If <code>(F, +)</code> is an additive group with identity <code>0</code>, then multiplication <i>cannot</i> form a group on all of <code>F</code> because <code>0</code> has no multiplicative inverse (<code>0 · x = 0 &ne; 1</code>).</li>
+    <li>The multiplicative group must eject zero: <code>(F \ {0}, ·)</code>.</li>
+    <li>A <b>Field <code>(F, +, ·)</code></b> is the absolute pinnacle of harmony between two operations: an additive group on all of <code>F</code>, a multiplicative group on <code>F \ {0}</code>, stitched together by the <b>Distributive Law</b>:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+        <b>a · ( b + c ) = a · b + a · c</b>
+      </div>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h3>3. Structure-Preserving Functions: Mapping Between Operations</h3>
+  <p>
+    A function <code>f : (G, ⋆) &rarr; (H, ⊙)</code> is <b>structure-preserving (a group homomorphism)</b> if:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 8px 0; color: #1e3a8a;">
+    <b>f( a ⋆ b ) &nbsp;=&nbsp; f(a) &odot; f(b)</b>
+  </div>
+  <p>
+    <i>Core Meaning:</i> You get the exact same answer whether you combine elements first in the starting world using <code>⋆</code>, or map them first and combine them in the destination world using <code>⊙</code>!
+  </p>
+  <ul>
+    <li><b>The Exponential Bridge:</b> <code>(ℝ, +) &rarr; (ℝ⁺, ·)</code> with <code>e^(a + b) = e^a · e^b</code> (translates addition into multiplication).</li>
+    <li><b>Dimension Embedding:</b> <code>(ℝ, +_ℝ) &rarr; (ℂ, +_ℂ)</code> with <code>(a + b) + 0i = (a + 0i) +_ℂ (b + 0i)</code>.</li>
+    <li><b>The Phase Map:</b> <code>(ℝ, +) &rarr; (U(1), ·)</code> with <code>e^(i(θ₁ + θ₂)) = e^(iθ₁) · e^(iθ₂)</code> (converts angle addition to phase rotation).</li>
+  </ul>
+
+  <hr>
+
+  <h3>4. Vector Spaces, Linear Maps &amp; Duality</h3>
+  <p>
+    Combining our field <code>F</code> (such as <code>ℝ_ω</code> or <code>ℂ_ω</code>) with Cartesian multi-directional intuition produces a <b>Vector Space <code>(V, +, ·)</code></b> governed by Two Basic Moves:
+  </p>
+  <ol>
+    <li><b>Vector Addition (u + v):</b> Abelian group behavior inside <code>V</code>.</li>
+    <li><b>Scalar Multiplication (c · v):</b> Distributing field elements across vector directions.</li>
+  </ol>
+
+  <h4>Linear Maps &amp; Calculus Operators</h4>
+  <p>
+    A map <code>T : V &rarr; W</code> is linear if <code>T(u + v) = T(u) + T(v)</code> and <code>T(c·v) = c·T(v)</code>.
+    This enables the linear derivative operator <code>D(f+g) = Df + Dg</code> and integral functional <code>∫(f+g) = ∫f + ∫g</code>.
+  </p>
+
+  <h4>Vector / Covector Duality</h4>
+  <p>
+    Every vector space <code>V</code> naturally pairs with its **dual space** <code>V*</code> of covectors (linear measurement meters):
+  </p>
+  <ul>
+    <li><b>Vectors (<code>v ∈ V</code>):</b> Physical states / directions (columns).</li>
+    <li><b>Covectors (<code>f ∈ V*</code>):</b> Linear detectors / measurement meters (rows).</li>
+    <li><b>Duality Pairing (<code>f(v) ∈ F</code>):</b> The meter reading (scalar number).</li>
+  </ul>
+
+  <hr>
+
+  <h3>5. The Concrete Realization: Quantum Bayesian Inference</h3>
+  <p>
+    With the mathematics established, the quantum realization falls right into place:
+  </p>
+  <ul>
+    <li>State vectors are <b>kets</b>: <code>|ψ⟩ ∈ H</code>.</li>
+    <li>Measurement detectors are <b>covectors (bras)</b>: <code>⟨ϕ| ∈ H*</code>.</li>
+    <li>The inner product <code>⟨ϕ|ψ⟩ ∈ ℂ_ω</code> provides the <b>Born rule probability amplitude</b>: <code>P = |⟨ϕ|ψ⟩|²</code>.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Course 1 Lecture Plan</h3>
+  <ul>
+    <li><b>Lecture 1: Emergent Groups, Fields &amp; The Two-Group Puzzle:</b> Skeletons on recursive trees, the transfinite leap to <code>ε₀</code>, why fields eject zero, and continuous transformation groups.</li>
+    <li><b>Lecture 2: Structure-Preserving Maps &amp; Symmetries:</b> Formalizing <code>f(a ⋆ b) = f(a) ⊙ f(b)</code>, scaling, reflection, the exponential bridge, and embedding dimensions.</li>
+    <li><b>Lecture 3: Vector Spaces, Linear Maps &amp; Duality:</b> Cartesian multi-directional space, linear maps, vector/covector duality, and Dirac bra-ket inference.</li>
+  </ul>
+
+</template>
+<template id="vectorsLecture1">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 1: Emergent Groups, Fields &amp; The Two-Group Puzzle</b></i></font><br>
+    <font size="+1"><i>— How Recursive Trees Build Groups, Fields &amp; Continuous Symmetries —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason opened the lecture by writing two simple structures on the board:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 16px; margin: 12px 0; color: #1e3a8a;">
+    <b>( G, + ) &emsp;&emsp;&emsp;&emsp; ( F, +, · )</b>
+  </div>
+
+  <p>
+    “In many traditional math courses,” Jason began, “students are handed a list of axioms for <i>groups</i> and <i>fields</i> as if mathematicians made up arbitrary rules for a game. But in this course, we take a different stance: <b>algebraic structures are not invented; they are observed symmetries of recursively defined number trees</b>.”
+  </p>
+
+  <p>
+    Jill leaned forward: “So the axioms are just descriptions of what the tree was doing all along?”
+  </p>
+
+  <p>
+    “Exactly,” Jason nodded. “And to see why, we first have to appreciate where our number scaffolds came from &mdash; and why our initial grid slice needs a safety net.”
+  </p>
+
+  <hr>
+
+  <h3>1. The Transfinite Scale: The Wee Cutoff at ω</h3>
+
+  <p>
+    “In our foundational studies,” Jason said, “we constructed numbers generation by generation on the tree: Day 0 (<code>0 = { | }</code>), Day 1 (<code>-1, +1</code>), Day 2 (<code>±2, ±1/2</code>), and so on.”
+  </p>
+
+  <p>
+    “We stopped our observation at Day <code>ω</code>, giving us the scaffolds <code>ℝ_ω</code> and <code>ℂ_ω</code>. But in the vast transfinite hierarchy of ordinals, <b>ordinal <code>ω</code> is a wee little thing!</b> It is merely the very first step after the finite counting numbers.”
+  </p>
+
+  <p>
+    “Of itself, a grid cutoff at <code>ω</code> is <b>not closed</b> under general arithmetic operations. When you multiply fine numbers, divide, or take roots, the exact arithmetic result often has a <b>birthday strictly greater than <code>ω</code></b> (such as Day <code>ω+1, ω·2, ω^ω</code>). This is the origin of <b>grid leakage</b>.”
+  </p>
+
+  <p>
+    “Did the missing numbers vanish?” Jill asked.
+  </p>
+
+  <p>
+    “Not at all!” Jason smiled. “They are caught in the wider transfinite tree as epsilons march off toward ever-higher horizons. By extending our birthday cutoff to the countable fixed-point ordinal <code>ε₀</code>:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>ε₀ &nbsp;=&nbsp; ω^(ω^(ω^...))</b> &emsp; where &emsp; <b>ω^(ε₀) = ε₀</b>
+  </div>
+
+  <p>
+    “Because <code>ω^ε₀ = ε₀</code>, this carrier set is <b>completely algebraically closed</b>: any addition, multiplication, or polynomial root of numbers born before Day <code>ε₀</code> stays before Day <code>ε₀</code>. We have our rock-solid safety net, and the <b>Standard Part Function <code>st(x)</code></b> casts the shadow cleanly back to our observable grid on Day <code>ω</code>.”
+  </p>
+
+  <hr>
+
+  <h3>2. Observing the Additive Skeleton: The Abelian Group (G, +)</h3>
+
+  <p>
+    “Now look at recursive addition on the tree,” Jason continued. “When we define <code>x + y</code> by inductive rules on branch options, we observe four fundamental symmetries:”
+  </p>
+
+  <ol>
+    <li>
+      <b>The Root Identity:</b> Adding the empty root node <code>0 = { | }</code> leaves any branch unchanged:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 4px 0;">
+        <b>x ∈ ℝ_ω &nbsp;&rArr;&nbsp; x + 0 = 0 + x = x</b>
+      </div>
+    </li>
+    <li>
+      <b>Bilateral Reflection (Inverses):</b> For every branch <code>x</code>, reflecting it across the tree root yields an opposite branch <code>-x</code> that perfectly cancels it back to the root:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 4px 0;">
+        <b>x ∈ ℝ_ω &nbsp;&rArr;&nbsp; ∃ y ∈ ℝ_ω : x + y = y + x = 0 &emsp; (where y = -x)</b>
+      </div>
+    </li>
+    <li>
+      <b>Bilateral Commutativity:</b> Bilateral symmetry of tree options guarantees that <code>x + y = y + x</code>.
+    </li>
+    <li>
+      <b>Inductive Associativity:</b> Grouping depth does not change tree generation: <code>(x + y) + z = x + (y + z)</code>.
+    </li>
+  </ol>
+
+  <p>
+    “We take this observed skeleton,” Jason explained, “and generalize it into a universal mathematical concept: any set with an operation satisfying these four properties is called an <b>Abelian Group <code>(G, +)</code></b>.”
+  </p>
+
+  <hr>
+
+  <h3>3. The "Two-Group" Marvel: Why Fields Eject Zero</h3>
+
+  <p>
+    “Now,” Jason said, leaning against the whiteboard, “here is a puzzle that mathematicians have marveled at for centuries: <b>can you simultaneously fit two independent groups onto the exact same carrier set?</b>”
+  </p>
+
+  <p>
+    Jill thought for a moment: “Why not? We have addition, and we have multiplication. Can't both be groups on the set <code>F</code>?”
+  </p>
+
+  <p>
+    “Let's test it,” Jason challenged. “Suppose <code>(F, +)</code> is an additive group with identity <code>0</code>. Now suppose multiplication <code>(F, ·)</code> is also a group with identity <code>1</code>.”
+  </p>
+
+  <p>
+    “In a multiplicative group, <i>every single element must have a multiplicative inverse</i> <code>x⁻¹</code> such that <code>x · x⁻¹ = 1</code>. What happens when you try to invert <code>0</code>?”
+  </p>
+
+  <p>
+    Jill’s eyes widened: “Zero times anything is always zero! <code>0 · x = 0</code>, which can never equal <code>1</code>!”
+  </p>
+
+  <p>
+    “Exactly!” Jason smiled. “Zero is a black hole for multiplication. <b>You cannot fit two full groups on one carrier set!</b> The best you can ever do is eject zero from the multiplicative group:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>The Field ( F, +, · )</b><br><br>
+    1. Addition forms an Abelian group on all of <b>F</b>: &nbsp; <b>( F, + )</b><br>
+    2. Multiplication forms an Abelian group on non-zero elements: &nbsp; <b>( F \ {0}, · )</b><br>
+    3. They are knitted together by <b>Distributivity</b>: &nbsp; <b>a · ( b + c ) = a · b + a · c</b>
+  </div>
+
+  <p>
+    “A <b>Field</b> is the ultimate mathematical peace treaty between addition and multiplication,” Jason said. “Our nonstandard continuum <code>ℝ_ω</code> and complex plane <code>ℂ_ω</code> are fully functioning fields.”
+  </p>
+
+  <hr>
+
+  <h3>4. Continuous Groups: Symmetries in Motion</h3>
+
+  <p>
+    “Before we move on,” Jason remarked, “notice that groups are not just discrete addition tables. How one represents <b>continuous groups</b> is a living, vibrant topic at the heart of modern mathematics and physics.”
+  </p>
+
+  <ul>
+    <li>
+      <b>The Translation Group (ℝ, +):</b> Shifting space continuously along a line: <code>x &rarr; x + a</code>. Adding shifts is group addition: <code>(x + a) + b = x + (a + b)</code>.
+    </li>
+    <li>
+      <b>The 2D Rotation Circle (SO(2) / U(1)):</b> Rotating the plane by an angle <code>θ</code>. Rotating by <code>θ₁</code> and then <code>θ₂</code> is a continuous group operation:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+        <b>R(θ₁) · R(θ₂) = R(θ₁ + θ₂)</b>
+      </div>
+    </li>
+  </ul>
+
+  <p>
+    “In our next lecture,” Jason concluded, “we will discover how functions bridge between different groups through <b>structure-preserving maps</b>!”
+  </p>
+
+</template>
+<template id="vectorsLecture2">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 2: Structure-Preserving Maps &amp; Symmetries</b></i></font><br>
+    <font size="+1"><i>— How Functions Bridge Between Operations: Homomorphisms &amp; Invariance —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began Lecture 2 by writing a single equation in the center of the whiteboard:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 16px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>f : ( G, ⋆ ) &rarr; ( H, ⊙ ) &emsp;&emsp; where &emsp;&emsp; f( a ⋆ b ) &nbsp;=&nbsp; f(a) &odot; f(b)</b>
+  </div>
+
+  <p>
+    “Last lecture,” Jason said, “we discovered how groups and fields emerge naturally from recursive trees. Today, we examine the central concept of modern mathematics: <b>how functions map between two different algebraic worlds while preserving their internal structure</b>.”
+  </p>
+
+  <p>
+    Jill looked closely at the equation: “Notice that there are two different symbols for the operations: <code>⋆</code> on the left and <code>⊙</code> on the right.”
+  </p>
+
+  <p>
+    “A crucial observation!” Jason beamed. “The operation <code>⋆</code> belongs to the starting group <code>G</code>, while the operation <code>⊙</code> belongs to the destination group <code>H</code>. A function <code>f</code> is <b>structure-preserving (a group homomorphism)</b> if calculating in the starting world and then mapping yields the exact same answer as mapping first and calculating in the destination world!”
+  </p>
+
+  <hr>
+
+  <h3>1. Pure Mathematical Examples of Structure Preservation</h3>
+
+  <p>
+    Jason walked through four progressively deeper mathematical bridges:
+  </p>
+
+  <h4>Example 1: Scaling a Measurement Ruler &mdash; (ℝ, +) &rarr; (ℝ, +)</h4>
+  <p>
+    Consider doubling all lengths via <code>f(x) = 2x</code>. The operation in both domain and codomain is standard addition (<code>⋆ = +, ⊙ = +</code>):
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    <b>f( a + b ) = 2·(a + b) = 2a + 2b = f(a) + f(b)</b>
+  </div>
+  <p>
+    Adding two lengths and doubling equals doubling each length and adding. The geometric scaling map preserves addition.
+  </p>
+
+  <h4>Example 2: Spatial Reflection / Negation &mdash; (ℝ, +) &rarr; (ℝ, +)</h4>
+  <p>
+    The reflection map <code>f(x) = -x</code>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    <b>f( a + b ) = -(a + b) = (-a) + (-b) = f(a) + f(b)</b>
+  </div>
+  <p>
+    Reflecting a combined sum across the origin is identical to reflecting each piece first and combining them.
+  </p>
+
+  <h4>Example 3: The Exponential Bridge &mdash; (ℝ, +) &rarr; (ℝ⁺, ·)</h4>
+  <p>
+    “Here is where the two operations truly differ,” Jason said. “Take the real numbers under <b>addition</b> <code>(ℝ, +)</code> and map them to positive real numbers under <b>multiplication</b> <code>(ℝ⁺, ·)</code> via <code>f(x) = e^x</code>:”
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 8px 0; color: #1e3a8a; background-color: #f8fafc; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>f( a + b ) = e^(a + b) = e^a · e^b = f(a) · f(b)</b>
+  </div>
+  <p>
+    “The exponential map seamlessly converts the additive structure of the domain (<code>⋆ = +</code>) into the multiplicative growth of the target (<code>⊙ = ·</code>)!”
+  </p>
+
+  <h4>Example 4: Embedding 1D into the 2D Complex Plane &mdash; (ℝ, +_ℝ) &rarr; (ℂ, +_ℂ)</h4>
+  <p>
+    Mapping a real number <code>x</code> to a complex number <code>f(x) = x + 0i</code> preserves addition across dimensions:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    <b>f( a +_ℝ b ) = (a + b) + 0i = (a + 0i) +_ℂ (b + 0i) = f(a) +_ℂ f(b)</b>
+  </div>
+  <p>
+    The 1D real axis is embedded inside the 2D plane with its internal algebraic geometry preserved with 100% fidelity.
+  </p>
+
+  <hr>
+
+  <h3>2. Continuous Phase Symmetries: Angles to Rotations</h3>
+
+  <p>
+    “Now look at continuous groups,” Jason said. “What happens when we map an angle <code>θ</code> to a point on the complex unit circle via <code>f(θ) = e^(iθ)</code>?”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>f( θ₁ + θ₂ ) = e^(i(θ₁ + θ₂)) = e^(iθ₁) · e^(iθ₂) = f(θ₁) · f(θ₂)</b>
+  </div>
+
+  <p>
+    “In the domain, we perform simple <b>angle addition</b>. In the target, we perform <b>complex multiplication</b> (a 2D rotation). The map <code>f(θ) = e^(iθ)</code> is a continuous group homomorphism from <code>(ℝ, +)</code> to the circle group <code>(U(1), ·)</code>!”
+  </p>
+
+  <p>
+    Jill smiled: “So whenever we rotate a phase by multiplying by <code>e^(iθ)</code>, we are just using a structure-preserving map!”
+  </p>
+
+  <p>
+    “Precisely!” Jason nodded. “And in our next lecture, we will generalize this from single groups to <b>Vector Spaces and Linear Maps</b>, where functions preserve both vector addition and scalar multiplication simultaneously!”
+  </p>
+
+</template>
+<template id="vectorsLecture3">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 3: Vector Spaces, Linear Maps &amp; Duality</b></i></font><br>
+    <font size="+1"><i>— The Relational Nature of Vectors, Linear Operators &amp; Dirac Bra-Ket Duality —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began the lecture by drawing a single bold arrow with white chalk across the blackboard:
+  </p>
+
+  <div align="center" style="margin: 15px 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" style="width: 100%; max-width: 400px; height: auto; background: #1e293b; border-radius: 6px;">
+      <line x1="60" y1="45" x2="330" y2="35" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round" />
+      <polygon points="345,34 325,25 328,45" fill="#f8fafc" />
+      <text x="200" y="68" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">v  (from here to there)</text>
+    </svg>
+  </div>
+
+  <p>
+    “None of us have much trouble understanding a geometric arrow like this,” Jason began. “Its message is as clear as day: <i>from here to there</i>.”
+  </p>
+
+  <p>
+    Jill looked around the room: “And it's easy to picture in 3D space. In the cubicle of this classroom, the nice 90-degree angles in the corner are practically beckoning us to choose them as our origin.”
+  </p>
+
+  <p>
+    “We certainly tip our hat to René Descartes for making it so convenient to reason about space quantitatively,” Jason replied. “Though in historical fairness, the crisp, orthogonal 90-degree axes we take for granted came well after Descartes. Today, we recognize those three perpendicular corner edges for what they truly are: <b>three distinguished vectors chosen from the space</b> &mdash; a basis &mdash; from which every other displacement can be built.”
+  </p>
+
+  <p>
+    “So what is it about our two previous concepts &mdash; the <b>Abelian group</b> and the <b>scalar field</b> &mdash; that makes them so natural for modeling these geometric vectors, and so much more?”
+  </p>
+
+  <hr>
+
+  <h3>1. Why Groups &amp; Fields Naturally Model Arrows “And More”</h3>
+
+  <p>
+    Jason broke down the physical geometry of displacement into pure algebraic operations:
+  </p>
+
+  <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; border-color: #cbd5e1; font-size: 13.5px; margin: 10px 0;">
+    <tr bgcolor="#f8fafc">
+      <th width="45%" align="left">Physical Geometric Intuition</th>
+      <th width="30%" align="center">Algebraic Structure</th>
+      <th width="25%" align="left">Mathematical Meaning</th>
+    </tr>
+    <tr>
+      <td><b>Combining steps:</b> Walking from A to B (<code>v</code>), then B to C (<code>w</code>), equals one net direct step.</td>
+      <td align="center"><code>u + v ∈ V</code></td>
+      <td>Vector Addition (Group Closure)</td>
+    </tr>
+    <tr>
+      <td><b>Order independence:</b> Walking 3m East then 4m North lands at the exact same spot as 4m North then 3m East.</td>
+      <td align="center"><code>u + v = v + u</code></td>
+      <td>Commutativity (Parallelogram Law)</td>
+    </tr>
+    <tr>
+      <td><b>Standing still:</b> Taking zero displacement.</td>
+      <td align="center"><code>v + 0 = v</code></td>
+      <td>Group Identity (The Origin)</td>
+    </tr>
+    <tr>
+      <td><b>Walking back:</b> Walking the exact reverse step back to where you started.</td>
+      <td align="center"><code>v + (-v) = 0</code></td>
+      <td>Group Inverse (Opposite Vector)</td>
+    </tr>
+    <tr>
+      <td><b>Stretching / shrinking:</b> Walking twice as far, half as far, or reversing along the same line.</td>
+      <td align="center"><code>c · v ∈ V</code> &nbsp; (for <code>c ∈ F</code>)</td>
+      <td>Scalar Scaling (Field Dilation)</td>
+    </tr>
+  </table>
+
+  <p>
+    “Notice,” Jason pointed out, “because we abstracted these properties into addition and field scaling, the structure models far more than arrows on a chalkboard:”
+  </p>
+  <ul>
+    <li><b>Sound Waves &amp; Functions:</b> Adding two audio signals <code>f(t) + g(t)</code> (polyphony) and turning up the volume <code>c · f(t)</code>.</li>
+    <li><b>Quantum Superpositions:</b> Combining two state amplitudes <code>|ψ₁⟩ + |ψ₂⟩</code> (wave interference) and rotating phase <code>e^(iθ) · |ψ⟩</code>.</li>
+    <li><b>Infinitesimal Grid Displacements:</b> <code>dz = dx + i·dy</code>.</li>
+  </ul>
+
+  <hr>
+
+  <h3>2. The Relational Nature of a Vector</h3>
+
+  <p>
+    Jason then paused and looked at the arrow on the blackboard:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>“A vector has no meaning outside of its membership in a vector or linear space.”</b>
+  </div>
+
+  <p>
+    Jill looked puzzled: “What do you mean? The arrow is right there on the board!”
+  </p>
+
+  <p>
+    “An isolated arrow on an empty board is just a lonely mark of chalk,” Jason explained. “It only becomes a <b>vector</b> through the <b>network of relationships</b> it shares with every other vector in the space:”
+  </p>
+
+  <ol>
+    <li>It knows how to combine with <i>every other</i> member in the space via addition (<code>u + v</code>).</li>
+    <li>It can be scaled by <i>every</i> scalar in the field <code>F</code> (<code>c · v</code>).</li>
+    <li>It has an established direction and distance relative to the origin (<code>0</code>).</li>
+    <li>It can be uniquely resolved into independent basis directions: <code>v = v_x e₁ + v_y e₂ + v_z e₃</code>.</li>
+  </ol>
+
+  <p>
+    “A vector is not an isolated object,” Jason emphasized. “<b>It is a citizen of a linear space</b>.”
+  </p>
+
+  <hr>
+
+  <h3>3. Linear Maps: Preserving the Vector Space</h3>
+
+  <p>
+    “Now,” Jason said, “just as a group homomorphism preserves group addition, a function between vector spaces <code>T : V &rarr; W</code> is a <b>Linear Map</b> if it preserves both basic moves simultaneously:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>T( u + v ) &nbsp;=&nbsp; T(u) + T(v) &emsp;&emsp;and&emsp;&emsp; T( c · v ) &nbsp;=&nbsp; c · T(v)</b>
+  </div>
+
+  <p>
+    “Decorating functions with linearity is what powers all of calculus:”
+  </p>
+  <ul>
+    <li><b>The Derivative Operator <code>D = d/dx</code>:</b> <code>D(f + g) = D(f) + D(g)</code> and <code>D(c·f) = c·D(f)</code>.</li>
+    <li><b>The Integral Functional <code>∫</code>:</b> <code>∫ (f + g) dx = ∫ f dx + ∫ g dx</code>.</li>
+    <li><b>Local Linear Approximation:</b> Calculus replaces a difficult curved function with its local linear multiplier: <code>Δy ≈ f'(x) · dx</code>.</li>
+  </ul>
+
+  <hr>
+
+  <h3>4. Vector / Covector Duality</h3>
+
+  <p>
+    “Every vector space <code>V</code> comes paired with a natural mirror space: its <b>dual space <code>V*</code> of covectors</b> (linear measurement meters):”
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 580px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Left: Vector Arrow -->
+        <rect x="20" y="20" width="250" height="100" rx="6" fill="#eff6ff" stroke="#93c5fd" />
+        <text x="145" y="45" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Vector (v ∈ V): The State / Arrow</text>
+        <line x1="50" y1="90" x2="220" y2="70" stroke="#2563eb" stroke-width="3" />
+        <polygon points="230,68 215,62 218,78" fill="#2563eb" />
+
+        <!-- Right: Covector Lines -->
+        <rect x="310" y="20" width="250" height="100" rx="6" fill="#faf5ff" stroke="#d8b4fe" />
+        <text x="435" y="45" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">Covector (f ∈ V*): Measuring Meter</text>
+        <line x1="340" y1="60" x2="340" y2="105" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,3" />
+        <line x1="380" y1="60" x2="380" y2="105" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,3" />
+        <line x1="420" y1="60" x2="420" y2="105" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,3" />
+        <line x1="460" y1="60" x2="460" y2="105" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,3" />
+        <line x1="500" y1="60" x2="500" y2="105" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,3" />
+      </svg>
+    </div>
+  </div>
+
+  <ul>
+    <li><b>Vectors (<code>v ∈ V</code>):</b> States, displacements, arrows (represented as columns).</li>
+    <li><b>Covectors (<code>f ∈ V*</code>):</b> Linear detectors, stacks of contour lines (represented as rows).</li>
+    <li><b>Duality Pairing (<code>f(v) ∈ F</code>):</b> The covector eats the vector and outputs a scalar reading (how many contour lines the vector pierces).</li>
+  </ul>
+
+  <hr>
+
+  <h3>5. The Physical Realization: Dirac Bra-Ket Quantum Inference</h3>
+
+  <p>
+    “With our mathematical duality established in pure notation,” Jason smiled, “we can now appreciate the profound syntax of quantum mechanics introduced by Paul Dirac:”
+  </p>
+
+  <ul>
+    <li>
+      <b>State Vectors are Kets (<code>|ψ⟩ ∈ H</code>):</b> The physical quantum state living in a complex Hilbert space <code>(H, +, ·, ⟨·,·⟩)</code>.
+    </li>
+    <li>
+      <b>Measurement Detectors are Bras (<code>⟨ϕ| ∈ H*</code>):</b> A covector in the dual space representing a measurement test.
+    </li>
+    <li>
+      <b>The Bracket (<code>⟨ϕ|ψ⟩ ∈ ℂ_ω</code>):</b> The covector <code>⟨ϕ|</code> eats the state vector <code>|ψ⟩</code> and outputs the complex probability amplitude!
+    </li>
+    <li>
+      <b>Born Rule Probability:</b> The observable probability is the squared magnitude:
+      <div align="center" style="font-family: monospace; font-size: 14px; margin: 6px 0; color: #1e3a8a;">
+        <b>P(ϕ | ψ) &nbsp;=&nbsp; |⟨ϕ | ψ⟩|²</b>
+      </div>
+    </li>
+    <li>
+      <b>Operators as State &otimes; Detector (<code>|ϕ⟩⟨ψ|</code>):</b> An outer product (vector &otimes; covector) is a linear projection operator that measures state <code>|ψ⟩</code> and prepares state <code>|ϕ⟩</code>!
+    </li>
+  </ul>
+
+  <p>
+    Jill beamed: “So Dirac's bra-ket notation is simply the physical language of vector/covector duality!”
+  </p>
+
+  <p>
+    “Exactly!” Jason concluded. “We have completed the formal foundations of Course 1. Next, in <b>Course 2: Analysis 1D</b>, we will explore continuous rates of change and accumulation on the real continuum <code>ℝ_ω</code>!”
+  </p>
+
+</template>
+<template id="analysis1DIntro">
+
+  <div align="center">
+    <font size="+2"><i><b>Course 2: Analysis 1D &amp; The Real Continuum</b></i></font><br>
+    <font size="+1"><i>— Instantaneous Rates, Continuous Accumulation &amp; The Hyperfinite Scaffold ℝ_ω —</i></font>
+  </div>
+  <br>
+
+  <h3>Preface: Taming the Unbroken Continuum</h3>
+  <p>
+    While <b>Algebra</b> studies exact equalities and discrete symmetries, <b>Analysis</b> is the branch of mathematics that tames <b>continuous change, approximation, and accumulation over an unbroken continuum</b>.
+  </p>
+  <p>
+    Whenever a quantity varies continuously across time or space, analysis addresses two master questions:
+  </p>
+  <ol>
+    <li><b>The Local Question (Instantaneous Rate of Change):</b> How fast is a function changing <i>right here, right now</i>, at a single point?</li>
+    <li><b>The Global Question (Continuous Accumulation):</b> How do uncountably many infinitesimal contributions across an unbroken interval cumulate into a single total sum (area, energy, or work)?</li>
+  </ol>
+
+  <hr>
+
+  <h3>1. The 19th-Century Paradox vs. The Hyperfinite Scaffold (ℝ_ω)</h3>
+  <p>
+    In classical 19th-century real analysis, every individual real number <code>x ∈ ℝ</code> has <b>exact width zero</b>. This created a profound foundational crisis:
+  </p>
+  <ul>
+    <li>Evaluating change at a single point requires dividing the change in output by the change in input: <code>Δy / Δx</code>.</li>
+    <li>If <code>Δx = 0</code>, division is algebraically impossible (<code>0 / 0</code> is undefined).</li>
+    <li>To avoid dividing by zero, standard analysis erected dense <b>epsilon-delta (ε-δ) limit towers</b>:
+      <div align="center" style="font-family: monospace; font-size: 13px; margin: 6px 0;">
+        f'(x) = lim (Δx &rarr; 0) [f(x + Δx) - f(x)] / Δx &emsp;&equiv;&emsp; ∀ε &gt; 0 &nbsp; ∃δ &gt; 0 &nbsp; ∀Δx ( 0 &lt; |Δx| &lt; δ &rArr; |Δy/Δx - L| &lt; ε )
+      </div>
+    </li>
+  </ul>
+
+  <p>
+    <b>The Nonstandard Resolution (Abraham Robinson, 1960):</b><br>
+    Rather than treating the continuum as a static collection of zero-width points, we use our constructive scaffold <b><code>ℝ_ω</code></b>, equipped with genuine **infinitesimals**:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>Infinitesimal Step: &nbsp; dx = 1/ω &nbsp;&gt;&nbsp; 0 &emsp; (smaller than any standard real 1/n)</b>
+  </div>
+
+  <p>
+    Because <code>dx &gt; 0</code>, division by <code>dx</code> is 100% legal, ordinary algebra!
+  </p>
+
+  <hr>
+
+  <h3>2. The Core Machinery: Tree Birthdays &amp; Halos</h3>
+
+  <h4>A. Infinitesimals on the Conway Tree</h4>
+  <p>
+    On John Conway's recursive number tree, numbers are created day by day. While integers and simple fractions are born on finite days (<code>0, 1, 2, ...</code>), <b>infinitesimals are born on Day <code>ω</code></b>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 8px 0; color: #1e3a8a; background-color: #f8fafc; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>dx &nbsp;=&nbsp; 1/ω &nbsp;=&nbsp; { 0 &nbsp;|&nbsp; 1, 1/2, 1/4, 1/8, ... } &nbsp;&gt;&nbsp; 0</b>
+  </div>
+  <p>
+    <code>dx</code> is strictly greater than <code>0</code>, yet smaller than every positive number born on any finite day.
+  </p>
+
+  <h4>B. The Infinitesimal Halo (Monad) μ(x)</h4>
+  <p>
+    Around every number <code>x</code> born on a finite day sits a cluster of tree nodes born on Day <code>ω</code> that differ from <code>x</code> by an infinitesimal step &mdash; its <b>Halo <code>μ(x)</code></b>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0; color: #1e3a8a;">
+    <b>μ(x) &nbsp;=&nbsp; { y ∈ ℝ_ω &nbsp;|&nbsp; y ≈ x } &emsp; where &emsp; y ≈ x &hArr; |y - x| is an infinitesimal tree branch</b>
+  </div>
+
+  <h4>C. The Standard Part Function (st)</h4>
+  <p>
+    Every finite number <code>y ∈ ℝ_ω</code> is uniquely decomposed into its earliest standard ancestor plus transfinite branch dust: <code>y = x + ε</code> (where <code>x</code> was born on a finite day and <code>ε</code> on Day <code>ω</code>).
+    The <b>Standard Part Function <code>st(y) = x</code></b> simply prunes the branch back to its earliest standard ancestor on the tree, casting its observable shadow on <code>ℝ</code>.
+  </p>
+
+  <hr>
+
+  <h3>3. The 1D Calculus Toolkit on ℝ_ω</h3>
+
+  <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; border-color: #cbd5e1; font-size: 13.5px; margin: 10px 0;">
+    <tr bgcolor="#f8fafc">
+      <th width="20%" align="left">Concept</th>
+      <th width="40%" align="center">Nonstandard Formulation (ℝ_ω)</th>
+      <th width="40%" align="left">Intuitive Meaning</th>
+    </tr>
+    <tr>
+      <td><b>Continuity</b></td>
+      <td align="center"><code>x ≈ y &nbsp;&rArr;&nbsp; f(x) ≈ f(y)</code></td>
+      <td>Points in the same halo map to the same halo (nearby points stay nearby).</td>
+    </tr>
+    <tr>
+      <td><b>Derivative</b></td>
+      <td align="center"><code>f'(x) = st( [f(x + dx) - f(x)] / dx )</code></td>
+      <td>Direct algebraic division over an infinitesimal step, followed by standard part shadow.</td>
+    </tr>
+    <tr>
+      <td><b>Integral</b></td>
+      <td align="center"><code>∫[a to b] f(x) dx = st( ∑[k=1 to ω] f(x_k) · dx )</code></td>
+      <td>Genuine discrete addition of <code>ω</code> microscopic rectangular tiles.</td>
+    </tr>
+    <tr>
+      <td><b>Fundamental Theorem</b></td>
+      <td align="center"><code>∑[k=1 to ω] [F(x_k) - F(x_{k-1})] = F(b) - F(a)</code></td>
+      <td>Pure telescoping cancellation of internal grid boundaries!</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>4. Side-by-Side Comparison: Classical vs. Nonstandard Analysis</h3>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 640px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Header -->
+        <rect x="0" y="0" width="640" height="26" fill="#f1f5f9" rx="8" />
+        <rect x="0" y="18" width="640" height="8" fill="#f1f5f9" />
+        <text x="320" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#334155">Comparing 1D Differentiation</text>
+
+        <!-- Left: Classical Secant Limit -->
+        <rect x="25" y="40" width="280" height="120" rx="4" fill="#faf5ff" stroke="#d8b4fe" />
+        <text x="165" y="62" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">Classical Standard Approach</text>
+        <text x="165" y="85" text-anchor="middle" font-family="monospace" font-size="10.5" fill="#581c87">f'(x) = lim (Δx→0) Δy / Δx</text>
+        <text x="165" y="110" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">Requires ε-δ quantified limit machinery</text>
+        <text x="165" y="130" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#7e22ce">Secant lines approaching a limit</text>
+
+        <!-- Right: Nonstandard Algebraic Division -->
+        <rect x="335" y="40" width="280" height="120" rx="4" fill="#eff6ff" stroke="#93c5fd" />
+        <text x="475" y="62" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af">Nonstandard ℝ_ω Approach</text>
+        <text x="475" y="85" text-anchor="middle" font-family="monospace" font-size="10.5" fill="#1e3a8a">f'(x) = st( Δy / dx )</text>
+        <text x="475" y="110" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#2563eb">Actual step dx = 1/ω &gt; 0</text>
+        <text x="475" y="130" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#2563eb">Direct algebraic division &amp; standard shadow</text>
+      </svg>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>Course 2 Lecture Plan</h3>
+  <ul>
+    <li><b>Lecture 1: The Infinitesimal Microscope &amp; Continuity:</b> The halo <code>μ(x)</code>, magnifying points by <code>ω</code>, defining continuity without <code>ε-δ</code>, and the Intermediate Value Theorem as a discrete grid march.</li>
+    <li><b>Lecture 2: Algebraic Derivatives &amp; Local Linearity:</b> Calculating slopes via pure algebra, the product and chain rules, and local linear approximation <code>df = f'(x)·dx</code>.</li>
+    <li><b>Lecture 3: Accumulation &amp; Telescoping Calculus:</b> Integrals as genuine hyperfinite sums, proving the Fundamental Theorem of Calculus in one telescoping line, and side-by-side comparisons with standard Riemann limits.</li>
+  </ul>
+
+</template>
+<template id="analysis1DLecture1">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 1: The Infinitesimal Microscope &amp; Continuity</b></i></font><br>
+    <font size="+1"><i>— Halos, Monads &amp; The Discrete Intermediate Value Theorem —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began Lecture 1 by drawing a single point on a horizontal real number line:
+  </p>
+
+  <div align="center" style="margin: 15px 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80" style="width: 100%; max-width: 500px; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px;">
+      <line x1="40" y1="40" x2="460" y2="40" stroke="#334155" stroke-width="2" />
+      <polygon points="465,40 455,35 455,45" fill="#334155" />
+      <circle cx="250" cy="40" r="4" fill="#2563eb" />
+      <text x="250" y="62" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af">x₀</text>
+    </svg>
+  </div>
+
+  <p>
+    “In standard 19th-century geometry,” Jason said, “a point <code>x₀</code> has exact width zero. And because it has width zero, if you ask how a function changes <i>at</i> that point, you are immediately forced to divide by zero: <code>0 / 0</code>.”
+  </p>
+
+  <p>
+    Jill looked at the point: “And that's why Weierstrass and Cauchy had to invent the epsilon-delta limit &mdash; because they couldn't actually step inside the point without breaking arithmetic.”
+  </p>
+
+  <p>
+    “Exactly,” Jason nodded. “Now let's see what happens when we view that exact same point through our constructive scaffold <b><code>ℝ_ω</code></b> using the <b>Infinitesimal Microscope</b>.”
+  </p>
+
+  <hr>
+
+  <h3>1. The Infinitesimal Microscope &amp; The Halo (Monad)</h3>
+
+  <p>
+    “Imagine pointing a microscope with magnification power <code>ω</code> directly at the point <code>x₀</code>,” Jason said:
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 600px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Left: Macroscopic Point -->
+        <rect x="20" y="20" width="220" height="120" rx="6" fill="#f8fafc" stroke="#cbd5e1" />
+        <text x="130" y="45" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#475569">Macroscopic View (ℝ)</text>
+        <line x1="40" y1="85" x2="220" y2="85" stroke="#64748b" stroke-width="2" />
+        <circle cx="130" cy="85" r="4" fill="#2563eb" />
+        <text x="130" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af">x₀</text>
+
+        <!-- Arrow: Magnification -->
+        <text x="280" y="75" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#64748b">Zoom × ω</text>
+        <line x1="250" y1="85" x2="310" y2="85" stroke="#94a3b8" stroke-width="2" />
+        <polygon points="315,85 305,80 305,90" fill="#94a3b8" />
+
+        <!-- Right: Microscopic Halo -->
+        <rect x="330" y="20" width="250" height="120" rx="6" fill="#eff6ff" stroke="#93c5fd" />
+        <text x="455" y="45" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af">Microscopic Halo μ(x₀) in ℝ_ω</text>
+        <line x1="350" y1="85" x2="560" y2="85" stroke="#3b82f6" stroke-width="1.5" />
+        <circle cx="455" cy="85" r="4" fill="#1d4ed8" />
+        <circle cx="495" cy="85" r="3" fill="#60a5fa" />
+        <circle cx="415" cy="85" r="3" fill="#60a5fa" />
+        <text x="455" y="105" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a">x₀</text>
+        <text x="500" y="105" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#2563eb">x₀ + dx</text>
+        <text x="410" y="105" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#2563eb">x₀ - dx</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    “Under the magnification of <code>ω</code>,” Jason explained, “what looked like a single isolated point blossoms into a cloud of transfinite tree nodes born at Day <code>ω</code>: <code>x₀ + dx, x₀ + 2dx, x₀ - dx/2</code>, all differing from <code>x₀</code> by infinitesimal branches.”
+  </p>
+
+  <p>
+    “This cluster is called the <b>Halo (or Monad) <code>μ(x₀)</code></b>:”
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 8px 0; color: #1e3a8a; background-color: #f8fafc; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>μ(x₀) &nbsp;=&nbsp; { y ∈ ℝ_ω &nbsp;|&nbsp; y ≈ x₀ } &emsp; where &emsp; y ≈ x₀ &hArr; |y - x₀| is an infinitesimal tree step</b>
+  </div>
+
+  <p>
+    “Every number <code>y ∈ ℝ_ω</code> has a unique shadow on the standard real line, obtained by pruning its Day <code>ω</code> transfinite dust back to its earliest standard ancestor through the <b>Standard Part Function <code>st(y)</code></b>.”
+  </p>
+
+  <hr>
+
+  <h3>2. Continuity Without Epsilon-Delta</h3>
+
+  <p>
+    “With halos in hand,” Jason said, “how would you define continuity in plain geometric terms?”
+  </p>
+
+  <p>
+    Jill paused, then smiled: “If nearby inputs produce nearby outputs. If two points are in the same halo, their function values must land in the same halo!”
+  </p>
+
+  <p>
+    “Spot on!” Jason beamed. “That is Robinson's nonstandard definition of continuity:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>Continuity at x₀: &emsp;&emsp; ∀ x ∈ ℝ_ω, &nbsp; x ≈ x₀ &nbsp;&rArr;&nbsp; f(x) ≈ f(x₀)</b>
+  </div>
+
+  <p>
+    Compare this direct one-line statement with the standard quantifier jungle:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 12.5px; margin: 6px 0; color: #64748b;">
+    ∀ε &gt; 0 &nbsp; ∃δ &gt; 0 &nbsp; ∀x &nbsp; ( |x - x₀| &lt; δ &nbsp;&rArr;&nbsp; |f(x) - f(x₀)| &lt; ε )
+  </div>
+  <p>
+    Nonstandard analysis replaces nested quantifier gymnastics with a simple geometric truth: <b>a continuous function preserves halos</b>.
+  </p>
+
+  <hr>
+
+  <h3>3. The Intermediate Value Theorem as a Discrete Grid March</h3>
+
+  <p>
+    “Now let's look at one of the classical crown jewels of real analysis,” Jason said: “<b>The Intermediate Value Theorem (IVT)</b>.”
+  </p>
+
+  <p>
+    <i>Theorem:</i> If <code>f</code> is continuous on <code>[a, b]</code> with <code>f(a) &lt; 0</code> and <code>f(b) &gt; 0</code>, there exists a point <code>c ∈ [a, b]</code> where <code>f(c) = 0</code>.
+  </p>
+
+  <p>
+    “In standard textbooks,” Jason noted, “proving this requires Dedekind cuts, least upper bounds, or topological connectedness. On our hyperfinite grid <code>ℝ_ω</code>, the proof is an intuitive <b>discrete march</b>:”
+  </p>
+
+  <ol>
+    <li>
+      Partition <code>[a, b]</code> into <code>ω</code> hyperfinite steps of width <code>dx = (b - a) / ω</code>, forming a discrete grid:
+      <div align="center" style="font-family: monospace; font-size: 13px; margin: 4px 0;">
+        a = x₀ &lt; x₁ &lt; x₂ &lt; ... &lt; x_ω = b
+      </div>
+    </li>
+    <li>
+      Start at <code>x₀</code> and march node-by-node along the grid.
+    </li>
+    <li>
+      Because <code>f(x₀) &lt; 0</code> and <code>f(x_ω) &gt; 0</code>, there must be a <b>first grid point <code>x_m</code> where <code>f(x_m) &ge; 0</code></b>.
+    </li>
+    <li>
+      At the step immediately before it, <code>f(x_{m-1}) &lt; 0</code>.
+    </li>
+    <li>
+      Since <code>x_{m-1} ≈ x_m</code> (they differ by only <code>dx</code>), continuity guarantees that <code>f(x_{m-1}) ≈ f(x_m)</code>.
+    </li>
+    <li>
+      Because <code>f(x_{m-1}) &lt; 0 &le; f(x_m)</code> and their difference is infinitesimal, their common standard part must be <b>exact zero</b>:
+      <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0; color: #1e3a8a;">
+        <b>st( f(x_m) ) = 0</b>
+      </div>
+    </li>
+    <li>
+      Taking <code>c = st(x_m)</code> immediately yields <b><code>f(c) = 0</code></b>!
+    </li>
+  </ol>
+
+  <p>
+    Jill smiled: “The proof is literally just walking across the grid until you cross zero!”
+  </p>
+
+  <p>
+    “Exactly,” Jason concluded. “No topological machinery, no uncomputable sets &mdash; just a constructive discrete march backed by the standard part shadow. In our next lecture, we will use our infinitesimal step <code>dx</code> to define <b>derivatives through pure algebra</b>!”
+  </p>
+
+</template>
+<template id="analysis1DLecture2">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 2: Algebraic Derivatives &amp; Local Linearity</b></i></font><br>
+    <font size="+1"><i>— Slopes as Algebraic Division, Product Rules &amp; Differential Forms —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began Lecture 2 by writing two contrasting expressions on the blackboard:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a;">
+    <b>Standard Limit Calculus:</b> &nbsp; lim (Δx &rarr; 0) [f(x + Δx) - f(x)] / Δx<br><br>
+    <b>Nonstandard Algebra:</b> &nbsp; st( [f(x + dx) - f(x)] / dx )
+  </div>
+
+  <p>
+    “In standard calculus,” Jason said, “the derivative is defined as the limit of secant lines as the step size <code>Δx</code> shrinks toward zero. But on our scaffold <code>ℝ_ω</code>, we have an actual nonzero infinitesimal step <code>dx = 1/ω</code>.”
+  </p>
+
+  <p>
+    Jill observed: “So instead of taking a limit, we just perform regular algebraic division and take the standard shadow at the end?”
+  </p>
+
+  <p>
+    “Exactly,” Jason smiled. “Let's see how this turns all of differential calculus into pure algebra.”
+  </p>
+
+  <hr>
+
+  <h3>1. Deriving Slopes by Pure Algebra</h3>
+
+  <h4>Example 1: The Parabola f(x) = x²</h4>
+  <p>
+    Let <code>f(x) = x²</code> and take an infinitesimal step <code>dx &gt; 0</code>:
+  </p>
+  <ol>
+    <li>Evaluate at <code>x + dx</code>: &nbsp; <code>f(x + dx) = (x + dx)² = x² + 2x·dx + dx²</code></li>
+    <li>Compute the difference: &nbsp; <code>Δy = f(x + dx) - f(x) = 2x·dx + dx²</code></li>
+    <li>Divide by <code>dx</code>: &nbsp; <code>Δy / dx = (2x·dx + dx²) / dx = 2x + dx</code></li>
+    <li>Take the standard part: &nbsp; <code>f'(x) = st(2x + dx) = 2x</code></li>
+  </ol>
+  <p>
+    No limits, no inequalities &mdash; just straightforward polynomial division!
+  </p>
+
+  <hr>
+
+  <h3>2. The Product Rule: Microscopic Rectangle Geometry</h3>
+
+  <p>
+    “Consider the product of two functions <code>u(x) · v(x)</code>,” Jason said. “Imagine an infinitesimal rectangle of dimensions <code>u</code> and <code>v</code>:”
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 500px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Base Box -->
+        <rect x="50" y="40" width="260" height="90" fill="#eff6ff" stroke="#3b82f6" />
+        <text x="180" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af">u · v</text>
+
+        <!-- Right Strip: u · dv -->
+        <rect x="310" y="40" width="70" height="90" fill="#faf5ff" stroke="#a855f7" />
+        <text x="345" y="90" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">u · dv</text>
+
+        <!-- Top Strip: v · du -->
+        <rect x="50" y="15" width="260" height="25" fill="#faf5ff" stroke="#a855f7" />
+        <text x="180" y="32" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">v · du</text>
+
+        <!-- Corner: du · dv -->
+        <rect x="310" y="15" width="70" height="25" fill="#f1f5f9" stroke="#94a3b8" />
+        <text x="345" y="30" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">du·dv</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    When <code>x</code> increases by <code>dx</code>, <code>u</code> grows by <code>du</code> and <code>v</code> grows by <code>dv</code>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 8px 0; color: #1e3a8a;">
+    Δ(u · v) = (u + du)(v + dv) - uv &nbsp;=&nbsp; u·dv + v·du + du·dv
+  </div>
+  <p>
+    Dividing by <code>dx</code>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    Δ(u·v) / dx = u · (dv/dx) + v · (du/dx) + (du/dx) · dv
+  </div>
+  <p>
+    Because <code>dv</code> is infinitesimal, <code>st((du/dx) · dv) = 0</code>. Taking the standard part immediately yields:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>( u · v )' &nbsp;=&nbsp; u · v' + v · u'</b>
+  </div>
+
+  <hr>
+
+  <h3>3. The Chain Rule: Genuine Fraction Cancellation</h3>
+
+  <p>
+    “In standard calculus,” Jason noted, “students are strictly warned: <i>'dy/dx is not a fraction; you cannot cancel dx!'</i>”
+  </p>
+  <p>
+    “On <code>ℝ_ω</code>, <code>dy</code> and <code>dx</code> <b>are genuine numbers</b>. For composite functions <code>y = f(u)</code> where <code>u = g(x)</code>:”
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 10px 0; color: #1e3a8a;">
+    <b>dy / dx &nbsp;=&nbsp; (dy / du) · (du / dx)</b>
+  </div>
+  <p>
+    Taking the standard part proves the Chain Rule directly:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 6px 0; color: #1e3a8a; background-color: #f8fafc; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>( f ∘ g )'(x) &nbsp;=&nbsp; f'(g(x)) · g'(x)</b>
+  </div>
+
+  <hr>
+
+  <h3>4. Local Linearity &amp; The Differential Map</h3>
+
+  <p>
+    “Remember our discussion from Course 1 on linear maps,” Jason concluded. “What does the derivative actually represent?”
+  </p>
+  <p>
+    “Over any infinitesimal step <code>dx</code> inside the halo <code>μ(x)</code>, the curved function is faithfully approximated by a **linear scaling map**:”
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>df &nbsp;=&nbsp; f'(x) · dx</b>
+  </div>
+  <p>
+    “The derivative <code>f'(x)</code> is the scalar multiplier of the linear map approximating the curve at <code>x</code>. In our next lecture, we will see how adding uncountably many of these linear pieces builds **continuous integration and the telescoping Fundamental Theorem of Calculus**!”
+  </p>
+
+</template>
+<template id="analysis1DLecture3">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 3: Accumulation &amp; Telescoping Calculus</b></i></font><br>
+    <font size="+1"><i>— Hyperfinite Sums, Area Under Curves &amp; The 1-Line Telescoping FTC —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began the final lecture of Course 2 by drawing a continuous curve over an interval <code>[a, b]</code>, divided into a multitude of vertical strips:
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 15px 0;">
+    <div style="width: 100%; max-width: 540px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 160" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Axes -->
+        <line x1="40" y1="130" x2="500" y2="130" stroke="#334155" stroke-width="2" />
+        <line x1="50" y1="140" x2="50" y2="20" stroke="#334155" stroke-width="2" />
+
+        <!-- Strips under curve -->
+        <path d="M 100 130 L 100 95 Q 220 30 350 70 T 460 30 L 460 130 Z" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+        
+        <!-- Individual Tile -->
+        <rect x="250" y="55" width="20" height="75" fill="#dbeafe" stroke="#2563eb" stroke-width="1" />
+        <text x="260" y="45" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#1e40af">f(x_k)·dx</text>
+
+        <!-- Labels -->
+        <text x="100" y="145" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155">a = x₀</text>
+        <text x="460" y="145" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155">b = x_ω</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    “In classical textbooks,” Jason said, “defining the integral requires taking the limit of Riemann sums as the mesh size shrinks to zero, or taking the supremum over all possible Darboux partitions.”
+  </p>
+
+  <p>
+    “On our hyperfinite scaffold <code>ℝ_ω</code>,” Jason smiled, “an integral is not an infinite limit. <b>It is literally a genuine discrete sum of <code>ω</code> microscopic rectangular tiles</b>.”
+  </p>
+
+  <hr>
+
+  <h3>1. The Discrete Hyperfinite Integral</h3>
+
+  <p>
+    Partition the interval <code>[a, b]</code> into <code>ω</code> equal infinitesimal steps of width <code>dx = (b - a) / ω</code>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    a = x₀ &lt; x₁ &lt; x₂ &lt; ... &lt; x_ω = b &emsp; where &emsp; x_k = a + k·dx
+  </div>
+
+  <p>
+    The continuous area under the curve is the standard part of the discrete sum:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∫[a to b] f(x) dx &nbsp;=&nbsp; st( ∑[k=1 to ω] f(x_k) · dx )</b>
+  </div>
+
+  <p>
+    Because this is an actual sum, all standard properties of integration &mdash; linearity, additivity of intervals, and area bounds &mdash; follow directly from the algebraic properties of discrete summation!
+  </p>
+
+  <hr>
+
+  <h3>2. The Fundamental Theorem of Calculus as Telescoping Cancellation</h3>
+
+  <p>
+    “Now,” Jason said, “we arrive at the crown jewel connecting differentiation and integration: <b>The Fundamental Theorem of Calculus (FTC)</b>.”
+  </p>
+
+  <p>
+    “Suppose <code>F'(x) = f(x)</code>. Across each microscopic step <code>dx</code> from <code>x_{k-1}</code> to <code>x_k</code>, the change in <code>F</code> is:”
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    <b>F(x_k) - F(x_{k-1}) &nbsp;≈&nbsp; F'(x_k) · dx &nbsp;=&nbsp; f(x_k) · dx</b>
+  </div>
+
+  <p>
+    “Now add up all <code>ω</code> steps from <code>x₀ = a</code> to <code>x_ω = b</code>:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∑[k=1 to ω] [ F(x_k) - F(x_{k-1}) ]</b><br><br>
+    = [ F(x₁) - F(x₀) ] + [ F(x₂) - F(x₁) ] + [ F(x₃) - F(x₂) ] + ... + [ F(x_ω) - F(x_{ω-1}) ]
+  </div>
+
+  <p>
+    Jill’s face lit up: “Every single middle term cancels! <code>+F(x₁)</code> cancels <code>-F(x₁)</code>, <code>+F(x₂)</code> cancels <code>-F(x₂)</code>... only the very first and very last terms survive!”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 10px 0; color: #1e3a8a;">
+    <b>= F(x_ω) - F(x₀) &nbsp;=&nbsp; F(b) - F(a)</b>
+  </div>
+
+  <p>
+    Taking the standard part on both sides yields the Fundamental Theorem of Calculus:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 16px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∫[a to b] f(x) dx &nbsp;=&nbsp; F(b) - F(a)</b>
+  </div>
+
+  <p>
+    “The entire Fundamental Theorem of Calculus is proven in a single line of telescoping cancellation,” Jason smiled. “There are no partition bounds, no epsilon squeezes, and no unconstructive approximations.”
+  </p>
+
+  <hr>
+
+  <h3>3. Looking Forward to Course 3: Analysis 2D (ℂ_ω)</h3>
+
+  <p>
+    “We have mastered continuous change on the 1D real continuum <code>ℝ_ω</code>,” Jason concluded.
+  </p>
+  <p>
+    “In <b>Course 3: Analysis 2D</b>, we take our 1D real axes and cross them into the 2D complex plane: <code>ℂ_ω = ℝ_ω ⊗ ℝ_ω</code> with cell step <code>dz = dx + i·dy</code>. There we will discover:”
+  </p>
+  <ul>
+    <li>How <b>Cauchy-Riemann equations</b> express conformal square preservation.</li>
+    <li>How <b>Cauchy's Integral Theorem</b> is simply 2D boundary cancellation across discrete grid squares.</li>
+    <li>How continuous quantum state evolution <code>U(t) = e^(-iHt/ħ)</code> completes our description of <b>Quantum Bayesian Inference</b>!</li>
+  </ul>
+
+</template>
+<template id="analysis2DIntro">
+
+  <div align="center">
+    <font size="+2"><i><b>Course 3: Analysis 2D &amp; The Complex Continuum</b></i></font><br>
+    <font size="+1"><i>— Conformal Geometry, Discrete Contour Integrals &amp; Quantum Inference —</i></font>
+  </div>
+  <br>
+
+  <h3>Preface: The Crown Jewel of Continuous Mathematics</h3>
+  <p>
+    If 1D Real Analysis (Course 2) is the calculus of moving along a line, <b>2D Complex Analysis is the geometry of rotating, scaling, and preserving shapes across an unbroken plane</b>.
+  </p>
+  <p>
+    Complex analysis is widely regarded as one of the most stunningly unified theories in all of science. On our transfinite tree scaffold <b><code>ℂ_ω = ℝ_ω ⊗ ℝ_ω</code></b>, complex analysis is not an intimidating maze of Riemann surfaces and winding numbers; it is the <b>discrete geometry of square-preserving cell transformations and 2D edge cancellations</b>.
+  </p>
+
+  <hr>
+
+  <h3>1. The 2D Complex Scaffold: Crossing Two 1D Tree Transects</h3>
+  <p>
+    The complex continuum <code>ℂ_ω</code> is constructed by taking two copies of our 1D real tree scaffold <code>ℝ_ω</code> and crossing them at right angles:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>z &nbsp;=&nbsp; x + i · y &emsp; where &emsp; x, y ∈ ℝ_ω &emsp;and&emsp; i² = -1</b>
+  </div>
+  <p>
+    The fundamental infinitesimal cell displacement is:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14px; margin: 6px 0;">
+    <b>dz &nbsp;=&nbsp; dx + i · dy &emsp; (where dx = 1/ω and dy = 1/ω)</b>
+  </div>
+
+  <hr>
+
+  <h3>2. Conformal Geometry &amp; The Cauchy-Riemann Symmetries</h3>
+  <p>
+    In real 2D calculus, a function <code>f : ℝ² &rarr; ℝ²</code> can stretch, squish, or distort shapes into arbitrary shears.
+    In <b>Complex Analysis</b>, requiring a single complex derivative <code>f'(z)</code> forces the transformation to be <b>Conformal (Shape-Preserving)</b>:
+  </p>
+  <ul>
+    <li>Every infinitesimal grid square is <b>scaled and rotated</b>, but <b>never sheared</b>!</li>
+    <li>This geometric square-preservation is algebraically expressed by the <b>Cauchy-Riemann Equations</b>:
+      <div align="center" style="font-family: monospace; font-size: 14px; margin: 8px 0; color: #1e3a8a;">
+        <b>∂u/∂x = ∂v/∂y &emsp;&emsp;and&emsp;&emsp; ∂u/∂y = -∂v/∂x</b>
+      </div>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h3>3. Discrete Contour Integrals &amp; 2D Cell Cancellation</h3>
+  <p>
+    In 1D calculus, the Fundamental Theorem worked by 1D telescoping cancellation between adjacent line segments.
+    In 2D complex calculus, <b>Cauchy's Integral Theorem</b> is the exact 2D planar analog:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∮_γ f(z) dz &nbsp;=&nbsp; 0 &emsp; (around any closed loop enclosing no poles)</b>
+  </div>
+  <p>
+    <i>Why it works on <code>ℂ_ω</code>:</i> Summing the integral around the outer loop is identical to summing the circulations of all microscopic <code>dx × dy</code> square cells inside.
+    Every internal shared boundary edge is traversed twice in opposite directions &mdash; cancelling to exact zero!
+  </p>
+
+  <hr>
+
+  <h3>4. The Grand Payoff: Continuous Quantum Bayesian Inference &amp; Phase Transitions</h3>
+  <p>
+    Course 3 culminates in the ultimate unification of Linear Algebra, Analysis, and Inference:
+  </p>
+
+  <h4>A. Continuous Quantum State Evolution</h4>
+  <p>
+    The continuous-time evolution of a quantum state is a continuous phase rotation powered by the Hamiltonian operator <code>H</code>:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 8px 0; color: #1e3a8a;">
+    <b>|ψ(t)⟩ &nbsp;=&nbsp; U(t) |ψ(0)⟩ &nbsp;=&nbsp; e^(-i H t / ħ) |ψ(0)⟩</b>
+  </div>
+
+  <h4>B. Phase Transitions &amp; Lee-Yang Zeros</h4>
+  <p>
+    Why does liquid water suddenly freeze into rigid ice at exactly 0°C?
+  </p>
+  <ul>
+    <li>For any finite system (<code>N &lt; ω</code>), the thermodynamic partition function <code>Z(T)</code> is smooth and analytic everywhere on the real temperature axis.</li>
+    <li>Its zeros live exclusively in the <b>complex plane</b> (Lee-Yang zeros).</li>
+    <li>At the thermodynamic limit (<code>N = ω</code>), these complex zeros <b>pinch the real axis</b> at the critical temperature <code>T_c</code>, creating a sudden non-analytic singularity &mdash; the macroscopic phase transition!</li>
+  </ul>
+
+  <hr>
+
+  <h3>Course 3 Lecture Plan</h3>
+  <ul>
+    <li><b>Lecture 1: The 2D Complex Grid &amp; Conformal Maps:</b> Crossing 1D axes to build <code>ℂ_ω</code>, infinitesimal cell steps <code>dz = dx + i·dy</code>, and proving Cauchy-Riemann as square-preservation.</li>
+    <li><b>Lecture 2: Discrete Contour Integrals &amp; Residues:</b> Proving Cauchy's Integral Theorem via 2D cell edge cancellation, Laurent expansions, and root-counting loop integrals.</li>
+    <li><b>Lecture 3: Quantum State Evolution &amp; Phase Transitions:</b> Continuous unitary time evolution <code>U(t) = e^(-iHt/ħ)</code>, continuous wavepackets, and the Lee-Yang Phase Transition theorem.</li>
+  </ul>
+
+</template>
+<template id="analysis2DLecture1">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 1: The 2D Complex Grid &amp; Conformal Maps</b></i></font><br>
+    <font size="+1"><i>— Crossing Tree Transects, The 2D Step dz &amp; Cauchy-Riemann Square Preservation —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began Lecture 1 by sketching a 2D square grid on the blackboard, formed by crossing two copies of the 1D tree scaffold <code>ℝ_ω</code>:
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 15px 0;">
+    <div style="width: 100%; max-width: 520px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Axes -->
+        <line x1="30" y1="130" x2="490" y2="130" stroke="#334155" stroke-width="2" />
+        <line x1="50" y1="145" x2="50" y2="15" stroke="#334155" stroke-width="2" />
+        <text x="480" y="145" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155">Re (x)</text>
+        <text x="55" y="25" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155">Im (y)</text>
+
+        <!-- Grid Lines -->
+        <g stroke="#e2e8f0" stroke-width="1">
+          <line x1="120" y1="20" x2="120" y2="130" />
+          <line x1="190" y1="20" x2="190" y2="130" />
+          <line x1="260" y1="20" x2="260" y2="130" />
+          <line x1="330" y1="20" x2="330" y2="130" />
+          <line x1="400" y1="20" x2="400" y2="130" />
+          <line x1="50" y1="100" x2="470" y2="100" />
+          <line x1="50" y1="70" x2="470" y2="70" />
+          <line x1="50" y1="40" x2="470" y2="40" />
+        </g>
+
+        <!-- Highlighted Cell dz = dx + i dy -->
+        <rect x="260" y="70" width="70" height="30" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+        <text x="295" y="88" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#1e40af">dz = dx + i·dy</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    “In Course 2,” Jason said, “we explored continuous calculus along a 1D line. Today, we cross two 1D tree transects at right angles to construct the 2D complex plane: <b><code>ℂ_ω = ℝ_ω ⊗ ℝ_ω</code></b>.”
+  </p>
+
+  <p>
+    Jill observed: “In 1D, when you take an infinitesimal step <code>dx</code>, you can only step left or right. But in 2D, a point can be approached from an infinite number of directions: horizontally, vertically, or diagonally!”
+  </p>
+
+  <p>
+    “A profound observation,” Jason nodded. “And because you can approach a point from any 2D direction, requiring a function to be <b>complex differentiable</b> imposes an astonishingly powerful geometric symmetry!”
+  </p>
+
+  <hr>
+
+  <h3>1. Deriving the Cauchy-Riemann Equations</h3>
+
+  <p>
+    Let <code>f(z) = u(x, y) + i · v(x, y)</code> be a complex function, where <code>u</code> is the real part and <code>v</code> is the imaginary part.
+    For the derivative <code>f'(z) = st(Δf / dz)</code> to exist independently of direction, the slope along a <b>horizontal step</b> must match the slope along a <b>vertical step</b>:
+  </p>
+
+  <h4>Move 1: Horizontal Step (dz = dx, dy = 0)</h4>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    Δf / dx &nbsp;=&nbsp; [ (u(x+dx, y) - u(x, y)) + i(v(x+dx, y) - v(x, y)) ] / dx &nbsp;&rarr;&nbsp; <b>∂u/∂x + i · ∂v/∂x</b>
+  </div>
+
+  <h4>Move 2: Vertical Step (dz = i·dy, dx = 0)</h4>
+  <div align="center" style="font-family: monospace; font-size: 13.5px; margin: 6px 0;">
+    Δf / (i·dy) &nbsp;=&nbsp; [ (u(x, y+dy) - u(x, y)) + i(v(x, y+dy) - v(x, y)) ] / (i·dy) &nbsp;=&nbsp; (1/i) · ∂u/∂y + ∂v/∂y<br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;= <b>∂v/∂y - i · ∂u/∂y</b> &emsp; (since 1/i = -i)
+  </div>
+
+  <h4>Equating Real &amp; Imaginary Components:</h4>
+  <p>
+    Equating the horizontal and vertical slopes gives the famous <b>Cauchy-Riemann Equations</b>:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∂u/∂x &nbsp;=&nbsp; ∂v/∂y &emsp;&emsp;and&emsp;&emsp; ∂u/∂y &nbsp;=&nbsp; -∂v/∂x</b>
+  </div>
+
+  <hr>
+
+  <h3>2. Geometric Meaning: Conformal Square Preservation</h3>
+
+  <p>
+    “What do the Cauchy-Riemann equations actually mean geometrically?” Jason asked.
+  </p>
+
+  <p>
+    Jason drew a microscopic square on the input grid and its image under <code>f(z)</code>:
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 540px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Left: Input Square -->
+        <rect x="40" y="35" width="60" height="60" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+        <text x="70" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af">dx × dy</text>
+        <text x="70" y="115" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64748b">Input Cell</text>
+
+        <!-- Arrow -->
+        <text x="200" y="60" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#64748b">f(z)</text>
+        <line x1="150" y1="65" x2="250" y2="65" stroke="#94a3b8" stroke-width="2" />
+        <polygon points="255,65 245,60 245,70" fill="#94a3b8" />
+
+        <!-- Right: Rotated & Scaled Square (No Shear!) -->
+        <g transform="translate(370, 65) rotate(30)">
+          <rect x="-40" y="-40" width="80" height="80" fill="#faf5ff" stroke="#9333ea" stroke-width="2" />
+          <text x="0" y="5" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">Rotated Square</text>
+        </g>
+        <text x="370" y="125" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64748b">Output Cell: Preserves 90° Corners!</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    Jill smiled: “The transformation stretches and rotates the square, but it <b>never distorts it into a parallelogram</b>! It preserves every right angle!”
+  </p>
+
+  <p>
+    “Exactly!” Jason said. “A complex differentiable function is <b>conformal (shape-preserving)</b>: every microscopic square is mapped to another perfect square with zero shear.”
+  </p>
+
+  <p>
+    “In our next lecture, we will see how this square-preservation guarantees that integrating around any closed loop yields exact zero through <b>2D discrete cell edge cancellation</b>!”
+  </p>
+
+</template>
+<template id="analysis2DLecture2">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 2: Discrete Contour Integrals &amp; Residues</b></i></font><br>
+    <font size="+1"><i>— Cauchy's 2D Edge Cancellation, Poles &amp; Loop Root-Counting —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason began Lecture 2 by drawing a closed loop <code>γ</code> filled with a checkerboard mosaic of microscopic square cells:
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 15px 0;">
+    <div style="width: 100%; max-width: 520px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Outer Loop -->
+        <ellipse cx="260" cy="80" rx="190" ry="60" fill="#eff6ff" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,4" />
+        <text x="430" y="50" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Loop γ</text>
+
+        <!-- Internal Cells -->
+        <g stroke="#93c5fd" stroke-width="1">
+          <rect x="180" y="55" width="40" height="40" fill="#ffffff" />
+          <rect x="220" y="55" width="40" height="40" fill="#ffffff" />
+          <rect x="260" y="55" width="40" height="40" fill="#ffffff" />
+          <rect x="300" y="55" width="40" height="40" fill="#ffffff" />
+        </g>
+
+        <!-- Opposing Arrows on Shared Edge -->
+        <line x1="220" y1="58" x2="220" y2="92" stroke="#dc2626" stroke-width="2" />
+        <polygon points="217,70 220,62 223,70" fill="#dc2626" />
+        <line x1="222" y1="58" x2="222" y2="92" stroke="#16a34a" stroke-width="2" />
+        <polygon points="219,80 222,88 225,80" fill="#16a34a" />
+        <text x="220" y="115" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#334155">Opposing internal edges cancel!</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    “In 1D calculus,” Jason said, “the Fundamental Theorem worked because every intermediate point canceled out in a single line of telescoping addition. Today, we discover how the exact same principle works across a 2D plane: <b>Cauchy's Integral Theorem</b>.”
+  </p>
+
+  <hr>
+
+  <h3>1. Cauchy's Theorem as 2D Boundary Cancellation</h3>
+
+  <p>
+    Suppose you want to compute the total circulation around a closed loop: <code>∮_γ f(z) dz</code>.
+  </p>
+
+  <ol>
+    <li>
+      Tile the interior of the loop with microscopic square cells <code>dx × dy</code> on our grid <code>ℂ_ω</code>.
+    </li>
+    <li>
+      Sum the counter-clockwise circulation around every individual microscopic cell.
+    </li>
+    <li>
+      <b>The Internal Edge Cancellation:</b> For every interior boundary line separating two cells, the left cell integrates upwards (<code>↑</code>), while the right cell integrates downwards (<code>↓</code>). The two contributions are equal and opposite, <b>cancelling to exact zero</b>!
+    </li>
+    <li>
+      All internal edges vanish, leaving only the outermost perimeter edges &mdash; which form the outer loop <code>γ</code>!
+    </li>
+  </ol>
+
+  <p>
+    Because the Cauchy-Riemann equations guarantee that circulation around every unpunctured microscopic square is zero, the total loop integral must be <b>identically zero</b>:
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 16px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∮_γ f(z) dz &nbsp;=&nbsp; 0 &emsp; (for any loop enclosing no singularities)</b>
+  </div>
+
+  <hr>
+
+  <h3>2. Singularities &amp; The Residue Theorem</h3>
+
+  <p>
+    “What happens,” Jill asked, “if a function blows up at a point inside the loop &mdash; like <code>f(z) = 1/z</code> at <code>z = 0</code>?”
+  </p>
+
+  <p>
+    “When a puncture (pole) exists,” Jason explained, “the square at the origin cannot cancel. If we integrate <code>1/z</code> around a circle of radius <code>r = 1</code> using <code>z = e^(iθ)</code> and <code>dz = i·e^(iθ) dθ</code>:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 10px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>∮_{|z|=1} (1/z) dz &nbsp;=&nbsp; ∫[0 to 2π] (1/e^(iθ)) · (i·e^(iθ) dθ) &nbsp;=&nbsp; i ∫[0 to 2π] dθ &nbsp;=&nbsp; 2π i</b>
+  </div>
+
+  <p>
+    “The non-zero value <code>2π i</code> is the fundamental vortex circulation of the pole!” Jason said.
+    “This generalizes to the <b>Residue Theorem</b>: every closed loop integral simply counts the sum of its enclosed vortex residues:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 10px 0; color: #1e3a8a;">
+    <b>∮_γ f(z) dz &nbsp;=&nbsp; 2π i · ∑ Res(f, z_k)</b>
+  </div>
+
+  <hr>
+
+  <h3>3. Counting Zeros via Logarithmic Loops</h3>
+
+  <p>
+    “Finally,” Jason said, “look at what happens when we integrate the logarithmic derivative <code>f'(z) / f(z)</code> around a loop <code>γ</code>:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 15px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>( 1 / 2π i ) · ∮_γ [ f'(z) / f(z) ] dz &nbsp;=&nbsp; Number of Zeros of f(z) inside γ</b>
+  </div>
+
+  <p>
+    Jill’s eyes widened: “A continuous loop integral acts as an <b>exact integer counter</b> for how many roots are trapped inside!”
+  </p>
+
+  <p>
+    “Precisely!” Jason smiled. “And in our final lecture, we will use this exact root-counting mechanism to solve the great mystery of <b>Phase Transitions &amp; Lee-Yang Zeros</b> and complete our description of <b>Quantum Bayesian Inference</b>!”
+  </p>
+
+</template>
+<template id="analysis2DLecture3">
+
+  <div align="center">
+    <font size="+2"><i><b>Lecture 3: Quantum State Evolution &amp; Phase Transitions</b></i></font><br>
+    <font size="+1"><i>— Continuous Unitary Evolution, Wavepacket Inference &amp; The Lee-Yang Circle Theorem —</i></font>
+  </div>
+  <br>
+
+  <p>
+    Jason stood before the class to open the final lecture of the curriculum:
+  </p>
+
+  <p>
+    “We have traveled a remarkable intellectual journey. In <b>Course 1</b>, we discovered emergent algebraic structures, linear spaces, and Dirac bra-ket duality. In <b>Course 2</b>, we tamed continuous 1D change through infinitesimals and the telescoping Fundamental Theorem. Today, in our grand finale, we unite these foundations to describe <b>Continuous Quantum Bayesian Inference and the deep geometry of Phase Transitions</b>.”
+  </p>
+
+  <hr>
+
+  <h3>1. Continuous-Time Quantum Evolution</h3>
+
+  <p>
+    “In Course 1,” Jason reminded Jill, “we saw that a quantum state lives in a Hilbert space <code>(H, +, ·, ⟨·,·⟩)</code>. How does this state change continuously over time?”
+  </p>
+
+  <p>
+    “In quantum mechanics, time evolution is driven by the energy Hamiltonian operator <code>H</code> through a <b>continuous unitary group map</b>:”
+  </p>
+
+  <div align="center" style="font-family: monospace; font-size: 16px; margin: 12px 0; color: #1e3a8a; background-color: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+    <b>|ψ(t)⟩ &nbsp;=&nbsp; U(t) |ψ(0)⟩ &nbsp;=&nbsp; e^(-i H t / ħ) |ψ(0)⟩</b>
+  </div>
+
+  <p>
+    Jason pointed to the exponent: “Notice the pieces we've built:”
+  </p>
+  <ul>
+    <li>The Hamiltonian <code>H</code> is a <b>linear operator</b> on the vector space (Course 1).</li>
+    <li>The complex unit <code>i</code> rotates phases across the 2D plane <code>ℂ_ω</code> without changing length (Course 3).</li>
+    <li>Evaluating the infinitesimal rate of change yields <b>Schrödinger's Equation</b> directly:
+      <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 8px 0; color: #1e3a8a;">
+        <b>iħ · (d/dt) |ψ(t)⟩ &nbsp;=&nbsp; H |ψ(t)⟩</b>
+      </div>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h3>2. Continuous Wavepackets &amp; Quantum Bayesian Inference</h3>
+
+  <p>
+    “When a quantum state is continuous across space,” Jason continued, “the wavefunction <code>ψ(x) = ⟨x | ψ⟩</code> is the covector projection onto position <code>x</code>.”
+  </p>
+
+  <p>
+    The total probability is normalized through our hyperfinite integral:
+  </p>
+  <div align="center" style="font-family: monospace; font-size: 14.5px; margin: 8px 0; color: #1e3a8a;">
+    <b>∫[all space] |ψ(x)|² dx &nbsp;=&nbsp; st( ∑[k] |ψ(x_k)|² · dx ) &nbsp;=&nbsp; 1</b>
+  </div>
+
+  <p>
+    “When a detector at position <code>x</code> registers the particle, the prior state <code>|ψ⟩</code> undergoes a <b>Bayesian likelihood update (state collapse)</b>, projecting into the detected state. The Born rule <code>P(x) = |ψ(x)|²</code> is the exact bridge between linear Hilbert geometry and observational Bayesian inference!”
+  </p>
+
+  <hr>
+
+  <h3>3. The Physical Capstone: Phase Transitions &amp; Lee-Yang Zeros</h3>
+
+  <p>
+    “Now,” Jason smiled, “let's address one of the deepest questions in physical science: <b>why do sudden phase transitions occur?</b> Why does liquid water suddenly freeze into solid ice at exactly 0°C, even though microscopic atomic laws are completely smooth?”
+  </p>
+
+  <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="width: 100%; max-width: 580px; text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 180" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+        <!-- Real Axis -->
+        <line x1="30" y1="90" x2="550" y2="90" stroke="#334155" stroke-width="2" />
+        <text x="540" y="80" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155">Real Temp T</text>
+        <circle cx="290" cy="90" r="4" fill="#dc2626" />
+        <text x="290" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626">Critical Temp T_c</text>
+
+        <!-- Complex Unit Circle & Pinching Zeros -->
+        <ellipse cx="290" cy="90" rx="90" ry="70" fill="none" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="3,3" />
+        <circle cx="240" cy="40" r="3" fill="#2563eb" />
+        <circle cx="340" cy="40" r="3" fill="#2563eb" />
+        <circle cx="230" cy="90" r="3" fill="#2563eb" />
+        <circle cx="350" cy="90" r="3" fill="#2563eb" />
+        <circle cx="280" cy="85" r="3" fill="#2563eb" />
+        <circle cx="300" cy="85" r="3" fill="#2563eb" />
+        <circle cx="290" cy="91" r="3.5" fill="#dc2626" />
+
+        <text x="290" y="25" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af">Lee-Yang Zeros in Complex Plane ℂ_ω</text>
+        <text x="290" y="155" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#64748b">At N = ω, zeros pinch the real axis at T_c creating sudden macroscopic phase change!</text>
+      </svg>
+    </div>
+  </div>
+
+  <p>
+    Jason explained the four steps of the celebrated <b>Lee-Yang Circle Theorem</b>:
+  </p>
+
+  <ol>
+    <li>
+      <b>Finite Systems are Perfectly Smooth (N &lt; ω):</b> For any finite collection of <code>N</code> atoms, the partition function <code>Z_N(T)</code> is a polynomial with all positive real coefficients. A polynomial with positive coefficients <b>can never equal zero for any real temperature <code>T ∈ ℝ</code></b>.
+    </li>
+    <li>
+      <b>Zeros Live Exclusively in ℂ_ω:</b> In 1952, Nobel laureates T.D. Lee and C.N. Yang proved that all zeros of <code>Z_N</code> live off the real axis, distributed along a circle in the <b>complex plane <code>ℂ_ω</code></b>.
+    </li>
+    <li>
+      <b>The Thermodynamic Pinch (N = ω):</b> As the number of atoms reaches our transfinite scale <code>N = ω</code>, the density of complex zeros intensifies until they <b>pinch the real temperature axis at exact critical point <code>T_c</code></b>!
+    </li>
+    <li>
+      <b>Macroscopic Phase Change:</b> At <code>T = T_c</code>, the free energy <code>F(T) = -st(k_B T ln Z_ω(T))</code> hits a non-analytic kink &mdash; creating the sudden, sharp macroscopic transition of freezing, boiling, or ferromagnetism!
+    </li>
+  </ol>
+
+  <p>
+    Jill beamed: “A physical phase transition in our real world is literally caused by complex zeros pinching the real line on Day <code>ω</code>!”
+  </p>
+
+  <p>
+    “Exactly!” Jason concluded. “From recursive tree roots to linear spaces, from infinitesimal halos to 2D complex residues, we have unified the mathematical universe into a transparent, direct conceptual foundation for <b>Liberal Arts Mathematics</b>.”
+  </p>
+
+</template><script type="module">(()=>{var ut="http://www.w3.org/2000/svg",ft="http://www.w3.org/1999/xhtml",C=class e{elt;static elements=new Map;constructor(t="div",i,s="H",o){let n=s=="H"?ft:ut;o?this.elt=o:this.elt=document.createElementNS(n,t),i!=null&&this.elt.setAttribute("id",i),e.elements.set(this.elt,this)}static delete(t){e.elements.delete(t)}static wrapper(t){if(t)return e.elements.get(t)}append(t){this.elt.appendChild(t.elt)}getV(){return this.elt.innerHTML}setV(t){this.elt.innerHTML=t}getA(t){return this.elt.getAttribute(t)}getS(t){return this.getA(t)}getN(t){return+this.getS(t)}getAN(t){return t.map(i=>this.getN(i))}getAA(t){return t.map(i=>this.elt.getAttributeNS(null,i))}setA(t,i){this.elt.setAttributeNS(null,t,i.toString())}setAA(t){for(let i=0;i<t.length-1;i+=2)this.elt.setAttributeNS(null,t[i].toString(),t[i+1].toString())}eltBCR(){if(this.elt.parentElement)return this.elt.getBoundingClientRect();{let t=document.getElementById("scratch-slot");t.innerHTML="",t.appendChild(this.elt);let i=this.elt.getBoundingClientRect();return t.innerHTML="",i}}eltW(){return this.eltBCR().width}eltH(){return this.eltBCR().height}eltX(){return this.eltBCR().x}eltY(){return this.eltBCR().y}eltWH(){let t=this.eltBCR();return[t.width,t.height]}eltXYWH(){let t=this.eltBCR();return[t.x,t.y,t.width,t.height]}removeChildren(){Array.from(this.elt.children).forEach(t=>this.elt.removeChild(t))}child(){let t=Array.from(this.elt.children);if(t.length==0)console.log(`${this} has no children`);else if(t.length!=1)console.log(`${this} has multiple children`);else return e.wrapper(t[0])}children(){let t=[];return Array.from(this.elt.children).forEach(i=>{let s=e.wrapper(i);t.push(s)}),t}static ga(t,i){if(typeof t=="string"&&(t=document.getElementById(t)),typeof i=="string")return t.getAttributeNS(null,i);{let s=t;return i.map(o=>s.getAttributeNS(null,o))}}static sa(t,i,s){typeof t=="string"&&(t=document.getElementById(t)),t.setAttributeNS(null,i,s.toString())}static saa(t,i){typeof t=="string"&&(t=document.getElementById(t)),Array.isArray(i)||(i=[i]);for(let s=0;s<i.length-1;s+=2)t.setAttributeNS(null,i[s].toString(),i[s+1].toString())}};var x=class extends C{constructor(t,i){super(t,i,"S")}getBB(){return this.elt.getBBox()}move(t,i){this.setAA(["x",0,"y",0,"transform",`translate(${t},${i})`])}scale(t,i){console.log(`scale by x ${t} y ${i}`),i?this.setA("transform",`scale(${t} ${i})`):this.setA("transform",`scale(${t})`)}scaleMove(t,i,s,o){this.setAA(["x",0,"y",0]),this.setA("transform",` scale(${t} ${i}) translate(${s},${o})`)}},R=class extends x{x=0;y=0;width=0;height=0;constructor(t){super("g",t),this.setAA(["x",this.x,"y",this.y])}gmove(t,i){this.setAA(["x",0,"y",0]),this.setA("transform",`translate(${t},${i})`)}xscale(t,i){i?this.setA("transform",`scale(${t} ${i})`):this.setA("transform",`scale(${t})`)}gmoveScale(t,i,s){this.setAA(["x",0,"y",0]),this.setA("transform",`scale(${s}) translate(${t},${i})`)}gmoveScales(t,i,s,o){this.setA("transform",` translate(${t},${i}) scale(${s} ${o}) `)}},F=class e extends x{constructor(t,i){super(t,i)}static clearText(t){let i=Array.from(t.children);if(i.length==0)t.innerHTML="";else for(let s of i)if(Array.from(s.children).length==0)s.innerHTML="";else{let n=s;e.clearText(n)}}clear(){let t=this.elt;e.clearText(t)}getEstimatedMaxWidth(t){let i=this.elt.cloneNode(!0),s=document.getElementById("scratch-slot");s.innerHTML="";let o=new x("svg");s.appendChild(o.elt),o.elt.appendChild(i),i.innerHTML="ABC to XYZ";let n=i.getBBox();return s.innerHTML="",n.width/10*t}getTextWidthHeight(){let t=this.elt,i=document.getElementById("scratch-slot");i.innerHTML="";let s=new x("svg");s.setAA(["x",1,"y",1,"width",1e3,"height",1e3]),i.appendChild(s.elt),s.elt.appendChild(t);let o=t.getBBox();return i.innerHTML="",[o.width,o.height]}getTextWidth(){return this.getTextWidthHeight()[0]}getTextWH(){let t=document.getElementById("scratch-slot");t.innerHTML="";let i=new x("svg");i.setAA(["x",1,"y",1,"width",1e3,"height",1e3]),t.appendChild(i.elt),i.append(this);let o=this.elt.getBBox();return t.innerHTML="",[o.width,o.height]}},B=class extends F{constructor(t,i,s){super("text",t),i&&this.setA("x",`${i}`),s&&this.setA("y",`${s}`)}},v=class extends F{parent;constructor(t,i,s,o){super("tspan",o),this.parent=t,t.elt.appendChild(this.elt),i&&this.setA("x",`${i}`),s&&this.setA("y",`${s}`)}};function P(e,t){let i=document.getElementById("scratch-slot");i.innerHTML="";let s=new x("svg");s.setAA(["x",1,"y",1,"width",1e3,"height",100]),i.appendChild(s.elt);let o=new B;o.setAA(["x",10,"y",30,"font-size",t]),o.setV(e),s.elt.appendChild(o.elt);let n=o.getBB().width;return i.innerHTML="",n}var xt,W=class e extends R{static fontSize=16;static margin=15;static stdColor="blue";static overColor="purple";static selectedColor="black";chosen;choices=[];constructor(t,i){super(),xt=this,this.chosen=i,this.setA("style","background-color:aliceblue");let[s,o,n]=[e.margin,e.fontSize,e.stdColor],r=s+2/3*o;t.forEach(a=>{let l=a.indents?a.indents:0,c=a.type=="html"?"\u25A0":a.type=="index"?"\u25B6":"\u25CF",d="&nbsp;".repeat(l).concat(c," ",a.topic),g=new B;g.setV(d),g.setAA(["x",s,"y",r,"font-size",o,"stroke",`${n}`]),this.choices.push([a,g]),this.append(g),r=r+e.fontSize+10,g.elt.addEventListener("mouseover",()=>{g.setA("stroke",e.overColor)}),g.elt.addEventListener("mouseout",()=>{let m=g.getA("pointer-events")=="none"?e.selectedColor:e.stdColor;g.setA("stroke",m)}),g.elt.addEventListener("click",f=>{let m=f.target;this.chosen=this.choices.findIndex(b=>b[1].elt==m),this.setSelectedItem(),p.processSelection()})})}setSelectedItem(){this.choices.forEach((t,i)=>{let s=i==this.chosen?e.selectedColor:e.stdColor,o=i==this.chosen?"none":"auto";t[1].setAA(["stroke",s,"pointer-events",o])})}};var I=class e{static origin="https://localhost:8080";static logged;static errorFlag=-1;static app;constructor(t){e.app=t,e.logInit()}static async sendSVG(t,i){let s=`${e.origin}/svgPost/${e.app}/${t}`;try{console.log("before post JSON");let o=await fetch(s,{method:"POST",body:i,headers:{"Content-type":"application/text/plain; charset=UTF-8"}});console.log(`response:${o.ok} status ${o.status}`),o.ok?(e.errorFlag=0,e.log("svg processed")):(e.errorFlag=1,e.log("svg post failed: response not ok."))}catch(o){e.errorFlag=2,e.log(`svg post failed. ${o}`)}}static async setSegMap(t=!1,i){let s;t?s=i?`${e.origin}/reload/${e.app}/${i}`:`${e.origin}/reload/${e.app}`:s=`${e.origin}/getSegs/${e.app}`;try{console.log(`[SI.setSegMap] Attempting server fetch from ${s}...`);let o=await fetch(s,{method:"GET"});if(console.log(`[SI.setSegMap] Server response: ok=${o.ok} status=${o.status}`),o.ok){(await o.json()).forEach(r=>{let a=r.id.split("/")[0];p.segMap.set(a,r.seg)}),e.errorFlag=0,e.log(`segMap build complete via server. map size ${p.segMap.size}`);return}}catch(o){console.warn(`[SI.setSegMap] Server fetch from ${s} failed, attempting static fallback...`,o)}try{let o="./segs/segsFile.json";console.log(`[SI.setSegMap] Attempting fallback fetch from ${o}...`);let n=await fetch(o,{method:"GET"});n.ok?((await n.json()).forEach(a=>{let l=a.id.split("/")[0];p.segMap.set(l,a.seg)}),e.errorFlag=0,e.log(`segMap build complete via static fallback. map size ${p.segMap.size}`)):(e.errorFlag=1,e.log("segMap static fallback failed: response not ok."))}catch(o){e.errorFlag=2,e.log(`segMap static fallback failed: ${o}`)}}static async deleteSW(){let i=await navigator.serviceWorker.getRegistration("sw.js");console.log(`registered ${i}`)}static async requestSegEdit(t){e.log(`server edit request made for ${p.app} seg ${t}.`);let i=`${e.origin}/startEditor/${p.app}/${t}`,s=await fetch(i,{method:"GET"});e.log(`response ok ${s.ok} status ${s.status}`)}static logInit(){p.editMode&&!e.logged&&(e.logged=new C("div"),e.logged.elt.innerHTML="")}static log(t){if(console.log(t),p.editMode){let s=e.logged.getV().concat("<br>",`${t}`);e.logged.setV(s)}}};var bt=["#222222","#2e7d32","#1565c0","#c62828","#00695c","#ef6c00","#283593","#689f38"],nt={baseNode:"#e6c896",baseLink:"#c4aa7d",hoverNode:"#ff80ab",selectedNode:"#212121",firstSelection:"#1976d2",secondSelection:"#d32f2f",leftSubtree:"#d32f2f",rightSubtree:"#1976d2",leftSimpler:"#d32f2f",rightSimpler:"#1976d2",cutResult:"#000000",antenna:"#c4aa7d",projectionLine:"#b0bec5",highlightLink:"#78909c",omegaStatePath:"#0284c7",omegaStateNode:"#d97706",bg:"#f8fbff",frame:"#1565c0",birthdayColors:bt},O={plain:{mode:"plain",width:900,height:400,maxBD:6,nodeSize:4,labelType:"none",antenna:!1,arity:0},birthday:{mode:"birthday",width:900,height:420,maxBD:6,nodeSize:4,labelType:"birthday",antenna:!0,arity:0},labeled:{mode:"labeled",width:900,height:440,maxBD:4,nodeSize:24,fontSize:11,labelType:"sign",antenna:!0,topRoom:60,bottomRoom:30,arity:0},dyadic:{mode:"dyadic",width:900,height:440,maxBD:4,nodeSize:22,fontSize:11,labelType:"dyadic",antenna:!0,topRoom:60,bottomRoom:30,arity:0},projected:{mode:"projected",width:900,height:400,maxBD:6,nodeSize:4,labelType:"none",antenna:!1,bottomRoom:50,arity:0},precision:{mode:"precision",width:900,height:400,maxBD:6,nodeSize:4,labelType:"none",antenna:!1,precisionRoot:"--+",bottomRoom:50,arity:0},subtree:{mode:"subtree",width:900,height:400,maxBD:6,nodeSize:6,labelType:"none",antenna:!1,bottomRoom:60,arity:1},simplicity:{mode:"simplicity",width:900,height:420,maxBD:6,nodeSize:6,labelType:"none",antenna:!1,bottomRoom:85,arity:1},order:{mode:"order",width:900,height:400,maxBD:6,nodeSize:6,labelType:"none",antenna:!1,bottomRoom:60,arity:1},cut:{mode:"cut",width:900,height:420,maxBD:6,nodeSize:6,labelType:"none",antenna:!0,topRoom:30,bottomRoom:70,arity:2},addition:{mode:"addition",width:900,height:420,maxBD:6,nodeSize:6,labelType:"none",antenna:!0,topRoom:30,bottomRoom:90,arity:2},multiplication:{mode:"multiplication",width:900,height:420,maxBD:6,nodeSize:6,labelType:"none",antenna:!0,topRoom:30,bottomRoom:90,arity:2},isomorphism:{mode:"isomorphism",width:900,height:430,maxBD:6,nodeSize:6,labelType:"none",antenna:!0,topRoom:30,bottomRoom:100,arity:2},omegaState:{mode:"omegaState",width:900,height:420,maxBD:6,nodeSize:6,labelType:"none",antenna:!0,topRoom:25,bottomRoom:75,arity:1}};var h={ns:"http://www.w3.org/2000/svg",minus:"-",plus:"+",undetermined:"\u22A5"};function N(e){if(e=="leftPerp"||e=="rightPerp")return h.undetermined;let t=Number(e.substring(1,2)),i=Number(e.substring(2));return rt(t,i)}function rt(e,t){let i=Math.pow(2,e),s=h.plus;t>=i/2&&(s=h.minus,t=i-t-1);let o=h.plus.repeat(e).split(""),n=e-1;for(;n>0;)t%2>0&&(o[n]=h.minus),t=Math.floor(t/2),n--;if(s==h.plus)for(let r=0;r<e;r++)o[r]=o[r]==h.plus?h.minus:h.plus;return o.join("")}function w(e){return e.length==0?" [ ] ":e==h.undetermined?e:` [${e}] `}function yt(e){let t=+e.substring(1,2),i=+e.substring(2);return[t,i]}function T(e){let[t,i]=yt(e);return rt(t,i)}function St(e){let t=e.length,i=Math.pow(2,t),s=i/2;for(let o=0;o<t;o++){let n=Math.pow(2,o+2);s+=e[o]==h.plus?i/n:-i/n}return[t,Math.floor(s)]}function A(e){let[t,i]=St(e);return`K${t}${i}`}function M(e,t){for(let i=0;i<Math.max(e.length,t.length);i++){if(i>=e.length)return i>=t.length?0:t[i]==h.plus?1:-1;if(e[i]==h.plus){if(i>=t.length||t[i]==h.minus)return-1}else if(i>=t.length||t[i]==h.plus)return 1}return 0}function wt(e){let t=e[0].length;return e.forEach(i=>{i.length<t&&(t=i.length)}),t}function At(e,t){return[e.concat(h.plus),t.concat(h.minus),e.concat(h.plus,h.plus),e.concat(h.minus,h.plus),t.concat(h.minus,h.minus),t.concat(h.plus,h.minus)]}function vt(e){let t=[];for(let i=0;i<e.length;i++)t.includes(e[i])||t.push(e[i]);return t}function Ct(e){let t=e.length,i=wt(e),s="";for(let o=0;o<i;o++){for(let n=1;n<t;n++)if(e[0][o]!=e[n][o])return s;s=s.concat(e[0][o])}return s}function _(e,t){let i=M(e,t),[s,o]=i==1?[e,t]:[t,e],r=At(s,o).filter(l=>M(s,l)==1&&M(l,o)==1),a=vt(r);return a.length==1?a[0]:Ct(a)}function tt(e,t){return e==h.undetermined&&t==h.undetermined?"":e==h.undetermined?t.concat(h.minus):t==h.undetermined?e.concat(h.plus):_(e,t)}function K(e){let t=Number(e.substring(1,2)),i=Number(e.substring(2));return[t,i]}var $=class e{sign=void 0;numerator=0;precision=0;constructor(t,i,s,o){if(t&&t.length>0){this.sign=t[0];let n=t.split("").map(a=>a==this.sign?"F":"B"),r=n.findIndex(a=>a=="B");if(r==-1)this.numerator=t.length;else{this.precision=t.length-r;let a=Math.pow(2,this.precision);this.numerator=a*r;for(let l=r;l<t.length;l++){let c=n[l]=="B"?-1:1;this.numerator+=c*1/Math.pow(2,l-r+1)*a}}}else i&&(this.sign=i,this.numerator=s,this.precision=o)}show(){let t=this.sign=="-"?"-":""}format(){let t;if(!this.sign)return"0";let i=this.sign=="+"?"":this.sign;if(this.precision==0)return`${i}${this.numerator}`;{let s=Math.pow(2,this.precision),o=Math.floor(this.numerator/s),n=this.numerator%s;if(o==0&&n==0)return"0";if(n==0)return`${i}${o}`;{let r=n>1&&s%n==0?`1/${s/n}`:`${n}/${s}`;return o==0?`${i}${r}`:`${i}${o}&${r}`}}}toSignExpansion(){let t="";if(this.sign)if(this.precision==0)t=this.sign.repeat(this.numerator);else{let i=Math.pow(2,this.precision),s=this.numerator/i,o=Math.floor(s);if(this.numerator-o*i==0)t=this.sign.repeat(o);else{let r=this.sign==h.plus?h.minus:h.plus;t=this.sign.repeat(o+1).concat(r);let a=this.numerator-o*i;for(let l=1;l<this.precision;l++){let c=Math.pow(2,this.precision-l+1);a/c<=1/2?t=t.concat(r):(t=t.concat(this.sign),a-=1/Math.pow(2,l)*Math.pow(2,this.precision))}}}return t}static add(t,i){let s=t.precision>=i.precision?t:i,o=s==t?i:t,n=Math.abs(t.precision-i.precision),r=n==0?o:new e(void 0,o.sign,o.numerator*Math.pow(2,n),s.precision),a=s.sign==h.plus?1:-1,l=r.sign==h.plus?1:-1,c=a*s.numerator+l*r.numerator,d=c<0?h.minus:h.plus;c=Math.abs(c);let g=s.precision;return c==0&&(g=0,d=void 0),new e(void 0,d,c,g)}static multiply(t,i){let s=new e;if(t.sign&&i.sign){let o=t.numerator,n=t.precision,r=i.numerator,a=i.precision,l=n+a,c=Math.pow(2,l);s.sign=t.sign==i.sign?h.plus:h.minus,s.numerator=o*r,s.numerator/c!=Math.floor(s.numerator/c)?s.precision=l:s.numerator=s.numerator/c}return s}static fmtExp(t){return new e(t).format()}};var k=class e{static mc=0;static ac=0;static maxOps=1e7;static bailed=!1;static bailMsg="";static add(t,i){if(e.bailed)return e.bailMsg;if(e.ac++>e.maxOps)return e.bailed=!0,e.bailMsg=`bailed: adds:${e.ac} multiplies:${e.mc}`,e.bailMsg;let[s,o]=e.simplerSides(t),[n,r]=e.simplerSides(i),a=e.addVals(s,i),l=e.addVals(o,i),c=e.addVals(n,t),d=e.addVals(r,t),g=e.extremeVal(1,a.concat(c)),f=e.extremeVal(-1,l.concat(d));return tt(g,f)}static addVals(t,i){if(e.bailed)return[];let s=[];for(let o=0;o<t.length;o++)s.push(e.add(t[o],i));return s}static multiply(t,i){if(e.bailed)return e.bailMsg;e.mc++;let[s,o]=e.simplerSides(t),[n,r]=e.simplerSides(i),a=e.multiplyVals(t,i,s,n),l=e.multiplyVals(t,i,o,r),c=e.multiplyVals(t,i,s,r),d=e.multiplyVals(t,i,o,n),g=e.extremeVal(1,a.concat(l)),f=e.extremeVal(-1,c.concat(d));return e.bailed?e.bailMsg:tt(g,f)}static multiplyVals(t,i,s,o){if(e.bailed)return[];let n=[];for(let r of s)for(let a of o)n.push(e.add(e.add(e.multiply(r,i),e.multiply(t,a)),e.invertVal(e.multiply(r,a))));return n}static invertVal(t){let i="";for(let s=0;s<t.length;s++){let o=t[s]==h.plus?h.minus:h.plus;i=i.concat(o)}return i}static simplerSides(t){let i=[],s=[];for(let o=t.length;o>0;o--){let n=t.substring(0,o-1);M(t,n)==-1?i.push(n):s.push(n)}return[i,s]}static extremeVal(t,i){if(i.length==0)return h.undetermined;let s=i[0];for(let o=1;o<i.length;o++)M(s,i[o])==t&&(s=i[o]);return s}};var j=class{constructor(t){this.diagram=t}diagram;leftNodes=[];rightNodes=[];init(){this.diagram.setStatusPrompt([["Select a ","#37474f"],["source node",this.diagram.palette.selectedNode||"#212121"],[" to highlight its ","#37474f"],["left",this.diagram.palette.leftSubtree||"#d32f2f"],[" and ","#37474f"],["right",this.diagram.palette.rightSubtree||"#1976d2"],[" subtrees","#37474f"]])}onProcess(t){let i=t[t.length-1];this.diagram.clearHighlights();let s=this.diagram.palette.selectedNode||"#212121",o=this.diagram.palette.leftSubtree||"#d32f2f",n=this.diagram.palette.rightSubtree||"#1976d2";this.diagram.setNodeColor(i,s);let r=T(i);this.leftNodes=this.diagram.getSubtreeNodes(r.concat("-")),this.rightNodes=this.diagram.getSubtreeNodes(r.concat("+")),this.leftNodes.forEach(a=>this.diagram.setNodeColorByExp(a,o)),this.rightNodes.forEach(a=>this.diagram.setNodeColorByExp(a,n)),this.diagram.setStatusPrompt([["Selected: ","#37474f"],[w(r),s],[" | Left: ",o],[`${this.leftNodes.length} nodes`,o],[" | Right: ",n],[`${this.rightNodes.length} nodes`,n],[" (click background to clear)","#78909c"]])}onClear(){this.leftNodes=[],this.rightNodes=[],this.init()}},J=class{constructor(t){this.diagram=t}diagram;init(){this.diagram.setStatusPrompt([["Select a node","#1565c0"],[" to display its simpler ancestor path and simpler left/right sets","#37474f"]])}onProcess(t){let i=t[t.length-1];this.diagram.clearHighlights();let s=this.diagram.palette.selectedNode||"#212121",o=this.diagram.palette.highlightLink||"#78909c",n=this.diagram.palette.leftSimpler||"#d32f2f",r=this.diagram.palette.rightSimpler||"#1976d2";this.diagram.setNodeColor(i,s);let a=this.getSimplerNodeIds(i),l=N(i),c=[],d=[];a.forEach(m=>{M(N(m),l)===1?(c.push(m),this.diagram.setNodeColor(m,n)):(d.push(m),this.diagram.setNodeColor(m,r))});let g=i;for(let m=0;m<a.length;m++){let b=`${a[m]}${g}`;this.diagram.setLinkColor(b,o),g=a[m]}let f=m=>"{"+m.map(b=>w(N(b)).trim()).join(", ")+"}";this.diagram.setStatusPrompt([["Selected: ","#37474f"],[w(l),s],["  Left Simpler: ",n],[f(c),n],["  Right Simpler: ",r],[f(d),r]])}getSimplerNodeIds(t){let i=N(t),s=[];for(let o=i.length-1;o>=0;o--){let n=i.substring(0,o);s.push(A(n))}return s}onClear(){this.init()}},U=class{constructor(t){this.diagram=t}diagram;init(){this.diagram.setStatusPrompt([["Select a node","#1565c0"],[" to illustrate total order partition (all strictly smaller & larger nodes)","#37474f"]])}onProcess(t){let i=t[t.length-1];this.diagram.clearHighlights();let s=this.diagram.palette.selectedNode||"#212121",o=this.diagram.palette.leftSimpler||"#d32f2f",n=this.diagram.palette.rightSimpler||"#1976d2",r="#ffcdd2",a="#bbdefb",l=this.diagram.palette.highlightLink||"#78909c";this.diagram.setNodeColor(i,s),this.colorSubtree(i,"-",r),this.colorSubtree(i,"+",a);let c=N(i),d=this.getSimplerNodes(c);d.left.forEach(m=>{this.diagram.setNodeColor(m,o),this.colorSubtree(m,"-",r)}),d.right.forEach(m=>{this.diagram.setNodeColor(m,n),this.colorSubtree(m,"+",a)});let g=i,f=d.all;for(let m=0;m<f.length;m++){let b=`${f[m]}${g}`;this.diagram.setLinkColor(b,l),g=f[m]}this.diagram.setStatusPrompt([["Total Order for ","#37474f"],[w(c),s],[": Less (<) = ",o],["left simpler & subtrees",o],[" | Greater (>) = ",n],["right simpler & subtrees",n]])}colorSubtree(t,i,s){let o=N(t).concat(i);this.diagram.getSubtreeNodes(o).forEach(r=>this.diagram.setNodeColorByExp(r,s))}getSimplerNodes(t){let i=[],s=[],o=[];for(let n=t.length-1;n>=0;n--){let r=t.substring(0,n),a=A(r);i.push(a),M(r,t)===1?s.push(a):o.push(a)}return{all:i,left:s,right:o}}onClear(){this.init()}},q=class{constructor(t){this.diagram=t}diagram;init(){this.diagram.setStatusPrompt([["Select first node","#1565c0"],[" for Conway cut (L | R)","#37474f"]])}onFirstSelect(t){let i=N(t);this.diagram.setNodeColor(t,this.diagram.palette.firstSelection||"#1976d2"),this.diagram.setStatusPrompt([["First operand: ","#37474f"],[w(i),this.diagram.palette.firstSelection||"#1976d2"],[" \u2192 Select second node","#1565c0"]])}onProcess(t){if(t.length<2)return;let i=t[0],s=t[1],o=N(i),n=N(s),[r,a,l,c]=M(o,n)===1?[s,n,i,o]:[i,o,s,n],d=_(a,c),g=A(d),f="#b71c1c",m="#1b5e20",b=this.diagram.palette.cutResult||"#000000";this.diagram.setNodeColor(r,f),this.diagram.setNodeColor(l,m);let[E,L]=K(g);if(E>this.diagram.maxBD){if(E<=this.diagram.maxBD+1){let u=L%2===0?L/2:(L-1)/2,y=`K${E-1}${u}${g}`;this.diagram.setLinkColor(y,b)}}else this.diagram.setNodeColor(g,b);this.diagram.setStatusPrompt([["Result: ","#37474f"],[w(a),f],[" | ","#37474f"],[w(c),m],[" = ","#37474f"],[w(d),b],[" (click background to clear)","#78909c"]])}onClear(){this.init()}},G=class{constructor(t,i="+"){this.diagram=t;this.op=i}diagram;op;init(){let t=this.op==="+"?"addition":"multiplication";this.diagram.setStatusPrompt([[`Select first operand for Surreal ${t} (${this.op})`,"#1565c0"]])}onFirstSelect(t){let i=T(t);this.diagram.setNodeColor(t,this.diagram.palette.firstSelection||"#1976d2"),this.diagram.setStatusPrompt([["First operand: ","#37474f"],[w(i),this.diagram.palette.firstSelection||"#1976d2"],[` ${this.op} Select second operand`,"#1565c0"]])}onProcess(t){if(t.length<2)return;let i=T(t[0]),s=T(t[1]);k.mc=0,k.ac=0,k.bailed=!1;let o="#d32f2f",n="#2e7d32",r="#000000";this.diagram.setNodeColor(A(i),o),this.diagram.setNodeColor(A(s),n);let a=this.op==="+"?k.add(i,s):k.multiply(i,s),l="";k.bailed?l=" (max recursion count exceeded)":(this.op==="+"?l=` (addition recursion count: ${k.ac})`:l=` (mult: ${k.mc}, add: ${k.ac})`,a.length<=this.diagram.maxBD?this.diagram.setNodeColor(A(a),r):this.diagram.setDirectionAntenna(a,r)),this.diagram.setStatusPrompt([[w(i),o],[` ${this.op} `,"#37474f"],[w(s),n],[" = ","#37474f"],[w(a),r],[l,"#546e7a"]])}onClear(){this.init()}},Y=class{constructor(t){this.diagram=t}diagram;currentOp="+";init(){this.diagram.setStatusPrompt([["[Toggle Op] ","#1565c0"],[`Operation: ${this.currentOp==="+"?"Addition (+)":"Multiplication (*)"} | `,"#37474f"],["Select first operand","#1565c0"]])}toggleOp(){this.currentOp=this.currentOp==="+"?"\u2217":"+",this.diagram.clearHighlights(),this.init()}onFirstSelect(t){let i=T(t),s=new $(i).format();this.diagram.setNodeColor(t,this.diagram.palette.firstSelection||"#1976d2"),this.diagram.setStatusPrompt([["Op 1: ","#37474f"],[`${w(i)} (${s})`,this.diagram.palette.firstSelection||"#1976d2"],[` ${this.currentOp} Select second operand`,"#1565c0"]])}onProcess(t){if(t.length<2)return;let i=T(t[0]),s=T(t[1]),o=new $(i),n=new $(s),r=o.format(),a=n.format(),l=this.currentOp==="+"?$.add(o,n):$.multiply(o,n),c=l.format(),d=l.toSignExpansion(),g="#0288d1",f="#c2185b",m="#2e7d32";this.diagram.setNodeColor(A(i),g),this.diagram.setNodeColor(A(s),f),d.length<=this.diagram.maxBD?this.diagram.setNodeColor(A(d),m):this.diagram.setDirectionAntenna(d,m),this.diagram.setStatusPrompt([["Surreal: ","#37474f"],[w(i),g],[` ${this.currentOp} `,"#37474f"],[w(s),f],[" = ","#37474f"],[w(d),m],["  \u21D4  Dyadic: ","#00695c"],[`${r} ${this.currentOp} ${a} = ${c}`,"#00695c"]])}onClear(){this.init()}},Z=class{constructor(t){this.diagram=t}diagram;init(){this.diagram.setStatusPrompt([["Select any state node ","#1e40af"],["(e.g. on the top canopy in \u03A9) ","#0284c7"],["to inspect its address, hypothesis likelihoods & Bayes update","#64748b"]])}onProcess(t){let i=t[t.length-1];this.diagram.clearHighlights();let s=T(i),o=s.length,n=o>=this.diagram.maxBD,r=this.diagram.palette.omegaStateNode||"#d97706",a=this.diagram.palette.omegaStatePath||"#0284c7",l="#059669";this.diagram.traceAscendingPath(i,a,a),this.diagram.setNodeColor(i,r);let c=s,d=(c.match(/\+/g)||[]).length,g=(c.match(/-/g)||[]).length,f=c.length>0?`[ ${c.split("").join(" ")} ]`:"[ 0 (Root) ]",m=new $(s).format(),b=c.length>0?`(${c.replace(/\+/g,"H").replace(/-/g,"T")})`:"(Root)",E=Math.pow(.5,o),L=Math.pow(.7,d)*Math.pow(.3,g),u=E>0?L/E:1,y=(E*100).toFixed(o>4?3:2)+"%",S=(L*100).toFixed(o>4?3:2)+"%",z=u>=1?`${u.toFixed(2)}\xD7 (favors Biased)`:`${(1/u).toFixed(2)}\xD7 (favors Fair)`;if(n)this.diagram.setStatusPrompt([["Top State p: ","#1e293b"],[f,"#1e40af"],[` ${b}`,"#0284c7"],[` (x = ${m})`,"#059669"],[" | P(p|Fair)=","#64748b"],[y,"#1e40af"],[" | P(p|Biased 70%)=","#64748b"],[S,"#d97706"],[" | Bayes Factor: ","#1e293b"],[z,u>=1?"#d97706":"#1e40af"]]);else{this.diagram.highlightSubtreeCone(i,l,l),this.diagram.setNodeColor(i,r);let D=Math.pow(2,this.diagram.maxBD-o);this.diagram.setStatusPrompt([["Event E (Subtree): ","#1e293b"],[`${f}*`,"#059669"],[` (Covers ${D} states in \u03A9)`,"#0284c7"],[" | P(E|Fair)=","#64748b"],[y,"#1e40af"],[" | P(E|Biased 70%)=","#64748b"],[S,"#d97706"],[" | Event Bayes Factor: ","#1e293b"],[z,u>=1?"#d97706":"#1e40af"]])}}onClear(){this.init()}};var et=class extends x{config;palette;width;height;maxBD;nodeSize;topRoom;bottomRoom;leftRoom;rightRoom;fontSize;treeGroup;frameRect;statusLine;statusSpans=[];arity;state=0;wasVisited=[];controller;constructor(t){super("svg");let i=typeof t=="string"?t:t.mode,s=O[i]||O.plain,o=typeof t=="string"?{mode:i}:t;this.config={...s,...o},this.palette={...nt,...this.config.palette||{}},this.width=this.config.width||900,this.height=this.config.height||420,this.maxBD=this.config.maxBD!==void 0?this.config.maxBD:6,this.nodeSize=this.config.nodeSize!==void 0?this.config.nodeSize:6,this.fontSize=this.config.fontSize||12,this.topRoom=this.config.topRoom||20,this.bottomRoom=this.config.bottomRoom||40,this.leftRoom=this.config.leftRoom||20,this.rightRoom=this.config.rightRoom||20,this.arity=this.config.arity!==void 0?this.config.arity:0,this.setAA(["width",this.width,"height",this.height,"viewBox",`0 0 ${this.width} ${this.height}`,"style",`background-color:${this.palette.bg||"#f8fbff"}`]),this.config.showFrame!==!1&&(this.frameRect=new x("rect"),this.frameRect.setAA(["x",1,"y",1,"width",this.width-2,"height",this.height-2,"fill","none","stroke",this.palette.frame||"#1565c0","stroke-width",2,"rx",6]),this.append(this.frameRect)),this.treeGroup=new R,this.append(this.treeGroup),this.statusLine=new B,this.statusLine.setAA(["x",this.leftRoom+5,"y",this.height-18,"font-size",Math.max(this.fontSize,14),"font-family","system-ui, -apple-system, sans-serif"]),this.append(this.statusLine),this.buildTree(),this.initModeFeatures(),this.arity>0&&this.setupEventListeners()}buildTree(){for(let t=0;t<this.maxBD;t++){let i=Math.pow(2,t);for(let s=0;s<i;s++)this.buildNodeLinks(t,s)}this.config.antenna&&this.buildAllAntennas(),this.config.mode==="projected"?this.buildProjections():this.config.mode==="precision"&&this.buildPrecisionProjections(this.config.precisionRoot||"--+");for(let t=0;t<=this.maxBD;t++){let i=Math.pow(2,t);for(let s=0;s<i;s++){let o=`K${t}${s}`,[n,r]=this.getNodeCenter(t,s),a=new x("circle"),l=this.palette.baseNode||"#e6c896";if(this.config.mode==="birthday"&&this.palette.birthdayColors&&(l=this.palette.birthdayColors[t%this.palette.birthdayColors.length]),a.setAA(["cx",n,"cy",r,"r",this.nodeSize,"fill",l,"stroke","#5d4037","stroke-width",.8,"class","node","id",o,"cursor",this.arity>0?"pointer":"default"]),this.treeGroup.append(a),this.config.labelType==="sign"){let c=this.getSignExpansionLabel(t,s);this.renderNodeText(n,r,c,this.fontSize)}else if(this.config.labelType==="dyadic"){let c=T(o),d=new $(c).format();this.renderNodeText(n,r,d,this.fontSize)}}}}getNodeCenter(t,i){let s=this.width-(this.leftRoom+this.rightRoom),n=(this.height-(this.topRoom+this.bottomRoom))/(this.maxBD+1),r=Math.pow(2,t),a=s/r,l=(i+.5)*a+this.leftRoom,c=this.height-(this.bottomRoom+(t+.5)*n);return[l,c]}buildNodeLinks(t,i){let s=`K${t}${i}K${t+1}${i*2}`,o=`K${t}${i}K${t+1}${i*2+1}`,[n,r,a,l]=this.trimLinkCoords(t,i,t+1,i*2),[c,d,g,f]=this.trimLinkCoords(t,i,t+1,i*2+1);this.createLine(n,r,a,l,this.palette.baseLink||"#c4aa7d",s),this.createLine(c,d,g,f,this.palette.baseLink||"#c4aa7d",o)}trimLinkCoords(t,i,s,o,n=-1){let[r,a]=this.getNodeCenter(t,i),[l,c]=this.getNodeCenter(s,o),d=Math.sqrt(Math.pow(l-r,2)+Math.pow(c-a,2)),g=this.nodeSize/d,f=g*(l-r),m=g*(c-a);return[r+f,a+m,l+n*f,c+n*m]}buildAllAntennas(){let t=Math.pow(2,this.maxBD);for(let i=0;i<t;i++){let[s,o,n,r]=this.trimLinkCoords(this.maxBD,i,this.maxBD+1,i*2,-1),a=`K${this.maxBD}${i}K${this.maxBD+1}${i*2}`;this.createLine(s,o,n,r,this.palette.antenna||"#c4aa7d",a,"antenna");let[l,c,d,g]=this.trimLinkCoords(this.maxBD,i,this.maxBD+1,i*2+1,-1),f=`K${this.maxBD}${i}K${this.maxBD+1}${i*2+1}`;this.createLine(l,c,d,g,this.palette.antenna||"#c4aa7d",f,"antenna")}}buildProjections(){let t=this.height-.5*this.bottomRoom;for(let i=0;i<=this.maxBD;i++)for(let s=0;s<Math.pow(2,i);s++){let[o,n]=this.getNodeCenter(i,s);this.createLine(o,n+this.nodeSize,o,t,this.palette.projectionLine||"#b0bec5",void 0,"projection")}this.createLine(this.leftRoom,t,this.width-this.rightRoom,t,"#455a64",void 0,"axis")}buildPrecisionProjections(t){let i=this.height-.5*this.bottomRoom,s=this.getSubtreeNodes(t),o=t.substring(0,t.length-1),n=t.substring(0,t.length-2);for(let r=0;r<=this.maxBD;r++)for(let a=0;a<Math.pow(2,r);a++){let l=`K${r}${a}`,c=T(l),[d,g]=this.getNodeCenter(r,a);(c===n||c===o)&&this.setNodeColor(l,"#212121"),s.includes(c)?(this.setNodeColor(l,"#c62828"),this.createLine(d,g,d,i,"#ef9a9a",void 0,"projection")):this.createLine(d,g,d,i,"#e0e0e0",void 0,"projection")}}getSignExpansionLabel(t,i){let s=Math.pow(2,t),o=h.plus;i>=s/2&&(o=h.minus,i=s-i-1);let n=h.plus.repeat(t).split(""),r=t-1;for(;r>0;)i%2>0&&(n[r]=h.minus),i=Math.floor(i/2),r--;if(o===h.plus)for(let l=0;l<t;l++)n[l]=n[l]===h.plus?h.minus:h.plus;let a=n.join(" ");return a===""?"[ ]":`[${a}]`}renderNodeText(t,i,s,o){let n=this.estimateTextWidth(s,o),r=t-.5*n,a=i+.35*o,l=new B;l.setAA(["x",r,"y",a,"fill","#212121","stroke","none","font-size",o,"font-family","monospace","font-weight","bold","pointer-events","none"]),l.setV(s),this.treeGroup.append(l)}estimateTextWidth(t,i){try{let s=P(t,i);if(s>0)return s}catch{}return t.length*i*.58}createLine(t,i,s,o,n,r,a="link"){let l=new x("line");return l.setAA(["x1",t,"y1",i,"x2",s,"y2",o,"stroke",n,"stroke-width",a==="axis"?2:1.2,"class",a]),r&&l.setA("id",r),this.treeGroup.append(l),l}initModeFeatures(){switch(this.config.mode){case"subtree":this.controller=new j(this);break;case"simplicity":this.controller=new J(this);break;case"order":this.controller=new U(this);break;case"cut":this.controller=new q(this);break;case"addition":this.controller=new G(this,"+");break;case"multiplication":this.controller=new G(this,"\u2217");break;case"isomorphism":this.controller=new Y(this);break;case"omegaState":this.controller=new Z(this);break;default:break}this.controller&&this.controller.init()}setupEventListeners(){this.elt.addEventListener("click",t=>{let i=t.target;if(i&&i.getAttributeNS(null,"class")==="node"){let s=i.id;this.arity===1?(this.wasVisited=[s],this.controller&&this.controller.onProcess(this.wasVisited)):this.state===0?(this.wasVisited=[s],this.state=1,this.controller&&this.controller.onFirstSelect&&this.controller.onFirstSelect(s)):this.state===1&&s!==this.wasVisited[0]&&(this.wasVisited.push(s),this.state=2,this.controller&&this.controller.onProcess(this.wasVisited))}else this.clearHighlights(),this.wasVisited=[],this.state=0,this.controller&&this.controller.onClear()}),this.elt.addEventListener("mouseover",t=>{let i=t.target;if(i&&i.getAttributeNS(null,"class")==="node"){let s=i.id;this.wasVisited.includes(s)||i.setAttributeNS(null,"fill",this.palette.hoverNode||"#ff80ab")}}),this.elt.addEventListener("mouseout",t=>{let i=t.target;if(i&&i.getAttributeNS(null,"class")==="node"){let s=i.id;if(!this.wasVisited.includes(s)){let o=this.palette.baseNode||"#e6c896";if(this.config.mode==="birthday"&&this.palette.birthdayColors){let n=Number(s.substring(1,2));o=this.palette.birthdayColors[n%this.palette.birthdayColors.length]}i.setAttributeNS(null,"fill",o)}}})}setNodeColor(t,i){let s=this.getTreeNode(t);s&&s.setA("fill",i)}setNodeColorByExp(t,i){let s=A(t);this.setNodeColor(s,i)}setLinkColor(t,i){let s=this.getTreeLink(t);s&&s.setA("stroke",i)}setDirectionAntenna(t,i="#000000"){let s=A(t.substring(0,this.maxBD+1)),[o,n]=K(s),r=n%2===0?n/2:(n-1)/2,a=`K${o-1}${r}${s}`,l=this.getTreeLink(a);l&&l.setA("stroke",i)}getTreeNode(t){return Array.from(this.treeGroup.children()).find(s=>s.getA("id")===t&&s.getA("class")==="node")}getTreeLink(t){return Array.from(this.treeGroup.children()).find(s=>s.getA("id")===t&&(s.getA("class")==="link"||s.getA("class")==="antenna"))}getSubtreeNodes(t){let i=t.length,s=[t];for(;i<this.maxBD;){let o=[];s.forEach(n=>{n.length===i&&(o.push(n.concat("-")),o.push(n.concat("+")))}),s.push(...o),i++}return s}traceAscendingPath(t,i,s){let o=T(t),n=["K00"];this.setNodeColor("K00",i);for(let r=1;r<=o.length;r++){let a=o.substring(0,r),l=A(a);n.push(l),this.setNodeColor(l,i);let c=o.substring(0,r-1),g=`${r===1?"K00":A(c)}${l}`;this.setLinkColor(g,s)}return n}highlightSubtreeCone(t,i,s){let o=T(t),n=this.getSubtreeNodes(o),r=[];return n.forEach(a=>{let l=A(a);if(r.push(l),this.setNodeColor(l,i),a.length>o.length){let c=a.substring(0,a.length-1),g=`${c.length===0?"K00":A(c)}${l}`;this.setLinkColor(g,s)}}),r}clearHighlights(){Array.from(this.treeGroup.children()).forEach(i=>{let s=i.getA("class");if(s==="node"){let o=i.getA("id")||"",n=this.palette.baseNode||"#e6c896";if(this.config.mode==="birthday"&&this.palette.birthdayColors){let r=Number(o.substring(1,2));n=this.palette.birthdayColors[r%this.palette.birthdayColors.length]}i.setA("fill",n)}else(s==="link"||s==="antenna")&&i.setA("stroke",this.palette.baseLink||"#c4aa7d")})}setStatusPrompt(t){this.statusLine.clear();let i=this.leftRoom+5;t.forEach(([s,o])=>{let n=new v(this.statusLine);n.setV(s),n.setA("fill",o),n.setA("stroke","none"),n.setA("x",i);let r=this.estimateTextWidth(s,Math.max(this.fontSize,14));i+=r+2})}scaleToWidth(t){let i=Math.max(300,t-20),s=Math.min(i/this.width,1),o=s*this.height;this.setAA(["width",i,"height",o]),this.treeGroup.xscale(s,s),this.frameRect&&this.frameRect.setAA(["width",this.width-2,"height",this.height-2])}};function it(e,t){let i=typeof e=="string"?document.getElementById(e):e;if(!i)throw new Error(`Target container not found: ${e}`);i.innerHTML="";let s=new et(t);return i.appendChild(s.elt),s}var Tt=[{seg:"xaTotalOrder",diagram:"subtree",mode:"subtree"},{seg:"xaTotalOrder",diagram:"simtree",mode:"simplicity"},{seg:"xaTotalOrder",diagram:"orderedtree",mode:"order"},{seg:"xaCut",diagram:"cutTree",mode:"cut"},{seg:"xaAddition",diagram:"addition",mode:"addition"},{seg:"xaMultiplication",diagram:"multiplication",mode:"multiplication"},{seg:"xaDyadicRationals",diagram:"isomorphism",mode:"isomorphism"},{seg:"xaTreeRepresentation",diagram:"staticTreeBirthday",mode:"birthday"},{seg:"xaTreeRepresentation",diagram:"staticTreeLabeled",mode:"labeled"},{seg:"xaTreeRepresentation",diagram:"staticTreeProjected",mode:"projected"},{seg:"xaDyadicRationals",diagram:"staticTreeDyadic",mode:"dyadic"},{seg:"xaDyadicRationals",diagram:"staticTreePrecision",mode:"precision"}],H=new Map;function Q(){H.clear(),Tt.forEach(t=>{if(p.segId===t.seg){let i=document.getElementById(t.diagram);if(i){let s=it(i,{mode:t.mode,id:t.diagram,...t.config||{}});H.set(t.diagram,s)}}}),document.querySelectorAll(".djsi[data-btree]").forEach(t=>{let i=t.getAttribute("data-btree"),s=t.id||`btree-${Math.random().toString(36).substring(2,7)}`;if(i&&!H.has(s)){let o=it(t,{mode:i,id:s});H.set(s,o)}})}function at(){let e=p.foWidth||window.innerWidth||900;H.forEach(t=>{t.scaleToWidth(e)})}var V=class e{static editControlsWidth;static editControls;static editControlsActiveStatus=!0;static savedContent;static controls=["[E]"," ","[R]"," ","[L]"];static colors;constructor(t){e.colors=[t.std,t.active,t.over,t.busy,"red"];let[i,s,o,n,r]=e.colors;e.editControls=new v(p.lineBlock),e.controls.forEach(a=>{let l=new v(e.editControls);l.setAA(["font-size",p.fontSize,"stroke",i,"pointer-events","none"]),l.setV(a),a!=" "&&(l.elt.addEventListener("mouseover",c=>{let d=l.getS("stroke");d!=n&&d!=r&&l.setA("stroke",o)}),l.elt.addEventListener("mouseout",()=>{let c=l.getS("stroke");c!=n&&c!=r&&l.setA("stroke",s)}),a=="[E]"?l.elt.addEventListener("click",c=>{e.segEditHandler(c)}):a=="[R]"?l.elt.addEventListener("click",c=>{e.segReplaceHandler(c)}):a=="[L]"&&l.elt.addEventListener("click",c=>{e.logViewHandler(c)}))}),e.editControlsWidth=P("[E] [R] [L]",p.fontSize),e.setEditControlStatus(!1),I.logInit()}static setEditControlsPos(t){e.editControls.setA("x",t-e.editControlsWidth)}static setEditControlStatus(t){let[i,s]=[p.color.std,p.color.active];t?e.editControlsActiveStatus||(e.editControlsActiveStatus=!0,e.editControls.children().forEach(o=>{o.setAA(["pointer-events","auto","stroke",s])})):e.editControlsActiveStatus&&(e.editControlsActiveStatus=!1,e.editControls.children().forEach(o=>{o.setAA(["pointer-events","none","stroke",i])}))}static setTargetColor(t,i){let s=t.target;C.wrapper(s).setA("stroke",i)}static getTargetColor(t){let i=t.target;return C.wrapper(i).getA("stroke")}static segEditHandler(t){let[i,s,o,n]=e.colors;e.setTargetColor(t,n),I.requestSegEdit(p.segId),e.setTargetColor(t,s)}static async segReplaceHandler(t){let[i,s,o,n,r]=e.colors,a=t.target,l=C.wrapper(a);e.getTargetColor(t)!=r&&(e.setTargetColor(t,n),p.setLastVisit(),await I.setSegMap(!0,p.segId),I.errorFlag!=0?e.setTargetColor(t,r):(p.loadSegment(),Q(),window.MathJax?.typesetPromise&&window.MathJax.typesetPromise([p.segDiv.elt]).catch(d=>console.log("MathJax typeset error:",d)),p.setSegPos())),e.setTargetColor(t,s)}static logViewHandler(t){let[i,s,o,n,r]=e.colors,a=t.target,l=C.wrapper(a);e.logDisplayed(l)?(p.fo.removeChildren(),p.fo.append(e.savedContent),p.setSegPos(),l.setAA(["stroke",s,"pointer-events","auto"])):(l.setAA(["stroke",n]),p.setLastVisit(),e.savedContent=p.fo.child(),p.fo.removeChildren(),p.fo.elt.append(I.logged.elt),p.display())}static logDisplayed(t){return t.getA("stroke")==p.color.busy}};var p=class e{static app;static parent;static cb;static segDiv;static frame;static line;static lineRect;static lineBlock;static lineArrowButton;static lineTopics;static textSizeControl;static index;static indexRect;static foRect;static fo;static indices=[];static currentIndex=-1;static indexWidth;static segId;static segMap=new Map;static lastVisits=new Map;static editMode;static marginLeft;static marginTop;static color={bg:"beige",std:"black",active:"blue",over:"purple",busy:"orange"};static margin={start:15,init:75,std:25,line:30};static foWidth;static foHeight;static foPadding=10;static foBgColor="whitesmoke";static width;static fontSize=20;static sideFontSize=14;static lineHeight=40;static offset=30;static frameMargin=5;static upArrow="\u2B9D";static dnArrow="\u2B9F";static arrowSize=30;static textFontSize=16;static getTextStyle(){return`background-color:${e.foBgColor};box-sizing:border-box;width:100%;min-height:100%;padding:${e.foPadding}px ${e.foPadding+5}px 50px ${e.foPadding+5}px;font-size:${e.textFontSize}px;display:flow-root;`}constructor(t,i=null,s=!1,o=void 0,n="darkgoldenrod",r="beige",a="white",l="aliceBlue"){let c=document.getElementById("main-slot");e.app=t,e.parent=i,e.cb=o,e.segDiv=new C("div"),e.segDiv.setA("style",e.getTextStyle()),e.editMode=s,e.frame=new x("svg"),e.line=new x("g"),e.lineRect=new x("rect"),e.lineBlock=new B,e.lineArrowButton=new v(e.lineBlock),e.lineTopics=new v(e.lineBlock),e.textSizeControl=new v(e.lineBlock),e.textSizeControl.setAA(["visibility","hidden","pointer-events","none"]),e.index=new x("svg"),e.indexRect=new x("rect"),e.foRect=new x("rect"),e.fo=new x("foreignObject"),c.appendChild(e.frame.elt),e.frame.append(e.line),e.line.append(e.lineRect),e.line.append(e.lineBlock),e.frame.append(e.index),e.frame.append(e.foRect),e.frame.append(e.fo);let d=e.frameMargin,g=e.lineHeight,f=2*d+g,m=e.margin.start,b=1/2*e.lineHeight+.6*e.fontSize;e.frame.setA("style",`background-color:${n}`),e.line.setA("height",g),e.lineRect.setAA(["x",d,"y",d,"height",g,"fill",`${r}`]),e.index.setAA(["x",d,"y",f]),e.indexRect.setAA(["x",0,"y",0,"fill",`${a}`]),e.foRect.setAA(["y",f,"fill",`${e.foBgColor}`]),e.fo.setAA(["y",f,"style","overflow-y:auto;overflow-x:hidden;"]),e.lineArrowButton.setAA(["x",m,"y",b,"stroke",e.color.std,"font-size",e.arrowSize]),e.lineArrowButton.setV(e.dnArrow),e.lineArrowButton.elt.addEventListener("click",()=>{e.lineArrowButtonPressed()}),e.lineArrowButton.elt.addEventListener("mouseover",()=>{e.lineArrowButton.setA("stroke",e.color.over)}),e.lineArrowButton.elt.addEventListener("mouseout",()=>{e.lineArrowButton.setA("stroke",e.color.std)}),e.setTextSizeControl(),e.editMode&&new V(e.color),e.parent&&e.addNavLineIndexItem("Banner",e.toBanner),window.onresize=()=>{e.display()},e.display()}static toBanner(t){let i=document.getElementById("main-slot");i.innerHTML="";let s=e.parent;i.appendChild(s.elt)}static setTextSizeControl(){["[\u2191]","A","[\u2193]"].forEach(i=>{let s=new v(e.textSizeControl);s.setA("font-size",e.fontSize),s.setV(i),i=="A"?s.setA("stroke",e.color.std):(s.setA("stroke",e.color.active),s.elt.addEventListener("mouseover",o=>{s.setA("stroke",e.color.over)}),s.elt.addEventListener("mouseout",()=>{s.setA("stroke",e.color.active)}),i=="[\u2191]"?s.elt.addEventListener("click",()=>{e.changeTextSize("+")}):i=="[\u2193]"&&s.elt.addEventListener("click",()=>{e.changeTextSize("-")}))})}static changeTextSize(t){e.textFontSize+=t=="+"?1:-1,e.segDiv.setA("style",e.getTextStyle())}static setTextSizeControlPos(t){let i=P("[\u2191]A[\u2193]",e.fontSize),s=t-i-10;return e.textSizeControl.setA("x",s),t-i-30}static display(){let t=window.innerWidth-e.offset,i=window.innerHeight-e.offset,s=e.frameMargin,o=e.lineHeight+2*s;e.frame.setAA(["width",t,"height",i]),e.line.setA("width",t-2*s),e.lineRect.setA("width",t-2*s),e.foHeight=i-e.lineHeight-3*s;let n=e.setTextSizeControlPos(t-2*s);e.editMode&&V.setEditControlsPos(n);let r=0,a=this.cb;if(e.currentIndex!=-1){let c=e.indices[e.currentIndex];c.chosen!=-1&&(a=c.choices[c.chosen][0].layoutCB),e.lineArrowButton.getV()==e.dnArrow&&(e.index.removeChildren(),e.index.append(e.indexRect),e.index.append(c),r=c.getBB().width+2*W.margin,e.indexRect.setAA(["width",r,"height",e.foHeight]))}let l=r>0?2*s+r:s;e.foWidth=r>0?t-3*s-r:t-2*s,e.foRect.setAA(["x",`${l}`,"width",e.foWidth,"height",e.foHeight]),e.fo.setAA(["x",`${l}`,"width",e.foWidth,"height",e.foHeight]),at(),a&&a()}static addNavLineIndexItem(t,i){let s=new v(e.lineTopics),[o,n]=[e.color.std,e.color.active];s.setAA(["font-size",e.fontSize,"stroke",o,"pointer-events","none"]),s.setV(t),s.elt.addEventListener("mouseover",()=>{s.setA("stroke",e.color.over)}),s.elt.addEventListener("mouseout",()=>{let a=s.getA("pointer-events")=="none"?o:n;s.setA("stroke",a)}),s.elt.addEventListener("click",a=>{i?i(a):e.lineItemSelectionHandler(a)});let r=e.lineTopics.children();for(let a=0;a<r.length-1;a++)r[a].setAA(["stroke",n,"pointer-events","auto"]);i&&r[0].setAA(["stroke",n,"pointer-events","auto"]),e.showNavLine()}static lineArrowButtonPressed(){let t=e.lineArrowButton.getV()==e.dnArrow?e.upArrow:e.dnArrow;e.lineArrowButton.setV(t),e.display()}static loadIndex(t,i,s=0){let o=new W(i,s);e.indices.push(o),e.currentIndex=e.indices.length-1,e.addNavLineIndexItem(t),o.setSelectedItem(),e.processSelection()}static processSelection(){e.textSizeControl.setAA(["visibility","hidden","pointer-events","none"]),e.editMode&&V.setEditControlStatus(!1);let t=e.indices[e.currentIndex],i=t.choices[t.chosen],[s,o]=i,n=e.lineTopics.children();if(e.fo.removeChildren(),s.type=="index")e.loadNewIndex(s);else{let r=n.length,a=n[r-1],l=a.getV();if(["comments","back"].includes(l)&&(e.lineTopics.elt.removeChild(a.elt),e.showNavLine()),s.type=="html")e.segId=s.htmlSegmentId,e.loadSegment(),Q(),e.setSegPos(),e.editMode&&V.setEditControlStatus(!0);else if(s.initCB){let c=s.initCB();e.fo.append(c)}}e.display()}static setSegPos(){e.lastVisits.has(e.segId)?e.fo.elt.scrollTop=e.lastVisits.get(e.segId):e.fo.elt.scrollTop=0}static setLastVisit(){let t=e.indices[e.currentIndex];t.choices[t.chosen][0].type=="html"&&e.lastVisits.set(e.segId,e.fo.elt.scrollTop)}static loadNewIndex(t){e.setLastVisit();let i=t.indexDesc;e.loadIndex(t.topic,i,t.indexSelection)}static loadSegment(){e.textSizeControl.setAA(["visibility","visible","pointer-events","auto"]),e.fo.setA("style","overflow-y:auto;overflow-x:hidden;");let t=e.editMode?e.segMap.get(e.segId):e.embeddedSeg(e.segId);!t&&e.editMode&&(t=e.embeddedSeg(e.segId)),t&&(e.segDiv.elt.innerHTML=t,e.fo.removeChildren(),e.fo.append(e.segDiv))}static embeddedSeg(t){let i=document.getElementById(t);if(!i)return"";if(i.tagName.toLowerCase()==="template")return i.innerHTML;let s=i.innerHTML;return s.startsWith("<!--SEG")&&s.endsWith("SEG-->")?s.substring(8,s.length-8):s}static addNavLineBackButton(t){let i=new v(e.lineTopics),[s,o]=[e.color.std,e.color.active];i.setAA(["font-size",e.fontSize,"stroke",o,"pointer-events","auto"]),i.setV(t),i.elt.addEventListener("mouseover",()=>{i.setA("stroke",e.color.over)}),i.elt.addEventListener("mouseout",()=>{let n=i.getA("pointer-events")=="none"?s:o;i.setA("stroke",n)}),i.elt.addEventListener("click",n=>{e.backButtonSelectionHandler(n)}),e.showNavLine()}static lineItemSelectionHandler(t){let i=e.lineTopics.children(),s=t.target,o=C.wrapper(s),n=i.findIndex(a=>a==o);if(n!=-1){for(let c=i.length-1;c>n;c--)e.lineTopics.elt.removeChild(i[c].elt);let[a,l]=[e.color.std,e.color.active];e.currentIndex=n,i[n].setAA(["stroke",a,"pointer-events","none"]);for(let c=0;c<n;c++)i[c].setAA(["stroke",l,"pointer-events","auto"])}e.setLastVisit(),e.showNavLine();let r=e.indices[this.currentIndex];r.chosen=0,r.setSelectedItem(),e.processSelection()}static backButtonSelectionHandler(t){let i=e.lineTopics.children(),s=i.length;e.lineTopics.elt.removeChild(i[s-1].elt),e.showNavLine(),e.processSelection()}static showNavLine(){let t=e.margin.init,i=1/2*e.lineHeight+1/4*e.fontSize+e.frameMargin;e.lineTopics.children().forEach(o=>{let r=o.getBB();o.setAA(["x",t,"y",i]),t+=r.width+e.margin.std})}static clearNavLine(){e.lineTopics.removeChildren(),e.showNavLine()}};var Et,X=class extends x{constructor(i,s,o,n,r,a){super("svg");this.lines=i;Et=this,typeof s=="object"&&s!==null?(s.fontSize&&(this.fontSize=s.fontSize),s.space&&(this.space=s.space),s.w&&(this.w=s.w),s.h&&(this.h=s.h),s.updateDate&&(this.updateDate=s.updateDate),s.dateCorner&&(this.dateCorner=s.dateCorner),s.color&&(this.color={...this.color,...s.color})):(typeof s=="number"&&(this.fontSize=s),o!==void 0&&(this.space=o),n!==void 0&&(this.w=n),r!==void 0&&(this.h=r),a&&(this.updateDate=a)),this.setAA(["style",`background-color:${this.color.bg}`,"width",this.w,"height",this.h]);let l=this.outerBorderWidth/2;this.frame=new x("rect"),this.frame.setAA(["x",l,"y",l,"fill","none","stroke",this.color.border,"stroke-width",this.outerBorderWidth]),this.append(this.frame),p.fo.append(this),this.group=new R,this.append(this.group);let c=this.lines.map(u=>typeof u=="string"?{text:u,fontSize:this.fontSize,color:this.color.text}:{fontSize:this.fontSize,color:this.color.text,...u}),d=0;c.forEach((u,y)=>{let S=u.fontSize||this.fontSize,z=u.space!==void 0?u.space:this.space;d+=S,y>0&&(d+=z)}),this.text=new B,this.group.append(this.text);let g=(this.h-d)/2;c.forEach((u,y)=>{let S=u.fontSize||this.fontSize,z=u.space!==void 0?u.space:this.space;y>0&&(g+=z);let D=new v(this.text);D.setV(u.text);let ot=u.color||this.color.text;D.setAA(["font-size",S,"stroke",ot,"fill",ot]),u.fontWeight&&D.setA("font-weight",u.fontWeight),u.fontStyle&&D.setA("font-style",u.fontStyle),u.fontFamily&&D.setA("font-family",u.fontFamily);let gt=D.getBB(),mt=(this.w-gt.width)/2,pt=g+S*.82;D.setAA(["x",mt,"y",pt]),g+=S,this.bannerElts.push(D)});let f=this.text.getBB(),m=f.width+2*this.margin,b=f.height+2*this.margin,E=(this.w-m)/2,L=(this.h-b)/2;if(this.rect=new x("rect"),this.rect.setAA(["x",E,"y",L,"width",m,"height",b,"fill",this.color.fill,"stroke",this.color.border,"stroke-width",this.innerBorderWidth,"rx",6]),this.group.elt.insertBefore(this.rect.elt,this.text.elt),this.connectWidth>0){let u=[[0,0,E,L],[this.w,0,E+m,L],[this.w,this.h,E+m,L+b],[0,this.h,E,L+b]];for(let y=0;y<4;y++){let S=new x("line");S.setAA(["x1",u[y][0],"y1",u[y][1],"x2",u[y][2],"y2",u[y][3],"stroke",this.color.border,"stroke-width",this.connectWidth]),this.group.elt.insertBefore(S.elt,this.rect.elt),this.connections.push(S)}}if(this.updateDate){this.dateText=new B;let u=this.w-25,y=this.h-20,S="end";this.dateCorner==="BL"?(u=25,y=this.h-20,S="start"):this.dateCorner==="TL"?(u=25,y=30,S="start"):this.dateCorner==="TR"&&(u=this.w-25,y=30,S="end"),this.dateText.setAA(["x",u,"y",y,"font-size",14,"font-family","system-ui, sans-serif","font-style","italic","fill",this.color.date||"#64748b","stroke","none","text-anchor",S]),this.dateText.setV(this.updateDate),this.group.append(this.dateText)}}lines;color={border:"darkblue",bg:"aliceblue",fill:"azure",text:"black",date:"#475569"};fontSize=50;margin=50;space=15;outerBorderWidth=5;innerBorderWidth=2;connectWidth=2;w=1e3;h=750;updateDate;dateCorner="BR";group;frame;rect;text;dateText;bannerElts=[];connections=[];layout(){let[i,s]=[p.foWidth,p.foHeight];this.frame.setAA(["width",i-this.outerBorderWidth,"height",s-this.outerBorderWidth]),this.setAA(["width",i,"height",s]);let[o,n]=[i/this.w,s/this.h];this.group.xscale(o,n)}};var st;function lt(){return st=new X([{text:"toward a direct conceptual foundation:",fontSize:36,color:"#475569"},{text:"liberal arts mathematics",fontSize:48,fontWeight:"bold",color:"#0f172a"},{text:"\u2014 solidifying the theoretical foundations",fontSize:28,fontStyle:"italic",color:"#64748b"}],{fontSize:44,space:20,updateDate:"Draft updated: August 2026",dateCorner:"BR"}),st}function ct(){st.layout()}var Bt=[{type:"html",topic:"course overview: linear algebra",htmlSegmentId:"vectorFoundationsIntro"},{type:"html",topic:"lecture 1: emergent groups & fields",htmlSegmentId:"vectorsLecture1"},{type:"html",topic:"lecture 2: structure-preserving maps",htmlSegmentId:"vectorsLecture2"},{type:"html",topic:"lecture 3: vector spaces & duality",htmlSegmentId:"vectorsLecture3"}],Lt=[{type:"html",topic:"course overview: analysis 1D",htmlSegmentId:"analysis1DIntro"},{type:"html",topic:"lecture 1: the infinitesimal microscope & continuity",htmlSegmentId:"analysis1DLecture1"},{type:"html",topic:"lecture 2: algebraic derivatives & local linearity",htmlSegmentId:"analysis1DLecture2"},{type:"html",topic:"lecture 3: accumulation & telescoping calculus",htmlSegmentId:"analysis1DLecture3"}],kt=[{type:"html",topic:"course overview: analysis 2D",htmlSegmentId:"analysis2DIntro"},{type:"html",topic:"lecture 1: the 2D complex grid & conformal maps",htmlSegmentId:"analysis2DLecture1"},{type:"html",topic:"lecture 2: discrete contour integrals & residues",htmlSegmentId:"analysis2DLecture2"},{type:"html",topic:"lecture 3: quantum state evolution & phase transitions",htmlSegmentId:"analysis2DLecture3"}],dt=[{type:"diagram",topic:"title",initCB:lt,layoutCB:ct},{type:"html",topic:"curriculum overview",htmlSegmentId:"introduction"},{type:"index",topic:"course 1: linear algebra",indexDesc:Bt},{type:"index",topic:"course 2: analysis 1D",indexDesc:Lt},{type:"index",topic:"course 3: analysis 2D",indexDesc:kt}];function ht(e=!1){new p("app2",null,e),p.clearNavLine(),p.loadIndex("main index",dt)}ht(!1);})();
+</script>
+</body>
+</html>
