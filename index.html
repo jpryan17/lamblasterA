@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxCalc | The Transparent Symbolic Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-group">
+        <div class="logo-icon">∫</div>
+        <div class="logo-text">
+          <h1>MaxCalc</h1>
+          <span class="tagline">The Transparent Symbolic Calculator · Powered by MaximaMiner</span>
+        </div>
+      </div>
+      <div class="header-controls">
+        <div class="text-size-widget" role="group" aria-label="Text Size Control">
+          <span class="widget-label">Text:</span>
+          <button type="button" class="size-btn" id="btnSizeSm" data-size="sm" title="Smaller Text">A−</button>
+          <button type="button" class="size-btn active" id="btnSizeMd" data-size="md" title="Default Text">A</button>
+          <button type="button" class="size-btn" id="btnSizeLg" data-size="lg" title="Larger Text">A+</button>
+        </div>
+        <div class="header-badges">
+          <span class="badge badge-lisp">Common Lisp AST</span>
+          <span class="badge badge-status" id="serverStatusBadge">● Connecting...</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Grid -->
+    <main class="main-layout">
+      <!-- Input Section -->
+      <section class="card input-card">
+        <div class="card-header">
+          <div class="step-indicator">1</div>
+          <h2>Define Expression</h2>
+        </div>
+
+        <!-- Expression Interface Mode Selector -->
+        <div class="mode-tabs" role="tablist">
+          <button class="tab-btn active" id="tabRational" data-mode="rational">
+            <span class="tab-icon">÷</span> Rational Fraction
+          </button>
+          <button class="tab-btn" id="tabTrig" data-mode="trig">
+            <span class="tab-icon">∿</span> Trig Powers
+          </button>
+          <button class="tab-btn" id="tabExp" data-mode="exp">
+            <span class="tab-icon">eˣ</span> Exponential
+          </button>
+          <button class="tab-btn" id="tabRadical" data-mode="radical">
+            <span class="tab-icon">√</span> Radicals
+          </button>
+          <button class="tab-btn" id="tabFreeform" data-mode="freeform">
+            <span class="tab-icon">✎</span> Freeform
+          </button>
+        </div>
+
+        <!-- Dynamic Template Forms -->
+        <div class="template-panel" id="templatePanel">
+          <!-- Form 1: Rational Fraction -->
+          <div class="template-view active" id="viewRational">
+            <div class="template-grid">
+              <div class="field-group">
+                <label for="ratNum">Numerator P(x):</label>
+                <input type="text" id="ratNum" class="math-input" value="1" placeholder="e.g. 1, 2*x, x^2 + 1">
+              </div>
+              <div class="fraction-divider">───────────────</div>
+              <div class="field-group">
+                <label for="ratDen">Denominator Q(x):</label>
+                <input type="text" id="ratDen" class="math-input" value="x^3 + 1" placeholder="e.g. x^3 + 1, x^2 - 4">
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 2: Trig Powers -->
+          <div class="template-view" id="viewTrig">
+            <div class="template-row">
+              <div class="field-group">
+                <label for="trigFunc">Function:</label>
+                <select id="trigFunc" class="math-select">
+                  <option value="sin">sin(x)</option>
+                  <option value="cos">cos(x)</option>
+                  <option value="tan">tan(x)</option>
+                  <option value="sec">sec(x)</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="trigPower">Power (n):</label>
+                <input type="number" id="trigPower" class="math-input number-input" value="3" min="1" max="12">
+              </div>
+              <div class="field-group">
+                <label for="trigMultiplier">Prefactor / Multiplier:</label>
+                <input type="text" id="trigMultiplier" class="math-input" value="1" placeholder="e.g. 1, cos(x), x">
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 3: Exponential -->
+          <div class="template-view" id="viewExp">
+            <div class="template-row">
+              <div class="field-group">
+                <label for="expPrefactor">Prefactor (xᵐ):</label>
+                <input type="text" id="expPrefactor" class="math-input" value="x" placeholder="e.g. 1, x, 1/x">
+              </div>
+              <div class="field-group">
+                <label for="expPower">Exponent Expression (g(x)):</label>
+                <input type="text" id="expPower" class="math-input" value="x^2" placeholder="e.g. x^2, x, -a*x^2">
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 4: Radical -->
+          <div class="template-view" id="viewRadical">
+            <div class="template-row">
+              <div class="field-group">
+                <label for="radNumerator">Numerator:</label>
+                <input type="text" id="radNumerator" class="math-input" value="1" placeholder="1 or x">
+              </div>
+              <div class="field-group">
+                <label for="radInside">Inside Root √( ... ):</label>
+                <input type="text" id="radInside" class="math-input" value="x^2 + 1" placeholder="e.g. x^2 + 1, 1 - x^2">
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 5: Freeform -->
+          <div class="template-view" id="viewFreeform">
+            <div class="field-group">
+              <label for="freeformExpr">Expression to Integrate:</label>
+              <input type="text" id="freeformExpr" class="math-input wide-input" value="x * exp(x^2)" placeholder="e.g. x * exp(x^2), 1/(x^4+1)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Preview Bar -->
+        <div class="preview-box">
+          <span class="preview-label">Live Formulation:</span>
+          <div class="math-preview" id="liveMathPreview">∫ ( 1 / (x^3 + 1) ) dx</div>
+        </div>
+
+        <!-- Quick Presets -->
+        <div class="presets-section">
+          <span class="presets-label">⚡ Benchmark Archetype Presets:</span>
+          <div class="preset-chips">
+            <button class="chip" data-expr="x * exp(x^2)" data-mode="freeform" title="Moses Derivative-Divides">
+              Derivative-Divides: x·e^(x²)
+            </button>
+            <button class="chip" data-expr="1 / (x^3 + 1)" data-mode="rational" data-num="1" data-den="x^3 + 1" title="Hermite Rational Decomposition">
+              Hermite: 1 / (x³ + 1)
+            </button>
+            <button class="chip" data-expr="1 / (x^4 + 1)" data-mode="rational" data-num="1" data-den="x^4 + 1" title="Quartic Partial Fractions">
+              Quartic: 1 / (x⁴ + 1)
+            </button>
+            <button class="chip" data-expr="sin(x)^3" data-mode="trig" data-func="sin" data-power="3" data-mult="1" title="Trig Substitution u = cos(x)">
+              Trig Sub: sin³(x)
+            </button>
+            <button class="chip" data-expr="cos(x)^4" data-mode="trig" data-func="cos" data-power="4" data-mult="1" title="Even Trig Reduction">
+              Even Trig: cos⁴(x)
+            </button>
+            <button class="chip" data-expr="exp(x) / x" data-mode="freeform" title="Risch Non-Elementary Proof">
+              Non-Elementary: eˣ / x
+            </button>
+            <button class="chip" data-expr="x / (x^2 + 1)" data-mode="freeform" title="Logarithmic Integral">
+              Logarithmic: x / (x² + 1)
+            </button>
+            <button class="chip" data-expr="1 / sqrt(x^2 + 1)" data-mode="radical" data-num="1" data-inside="x^2 + 1" title="Inverse Hyperbolic / Radical">
+              Radical: 1 / √(x² + 1)
+            </button>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="action-bar">
+          <button id="computeBtn" class="btn btn-primary">
+            <span class="btn-icon">⚡</span> Calculate &amp; Mine Execution Trace
+          </button>
+        </div>
+      </section>
+
+      <!-- Results & Transparency Section -->
+      <section class="card output-card" id="outputCard">
+        <div class="card-header">
+          <div class="step-indicator">2</div>
+          <h2>Mathematical Result &amp; Algorithm Trace</h2>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">🔍</div>
+          <p>Choose an expression template above and click <b>Calculate &amp; Mine Execution Trace</b> to inspect the real Common Lisp algorithm.</p>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-state hidden" id="loadingState">
+          <div class="spinner"></div>
+          <p>Executing inside Maxima SBCL runtime and parsing execution trace...</p>
+        </div>
+
+        <!-- Result Container -->
+        <div class="result-content hidden" id="resultContent">
+          <!-- Hero Result Banner -->
+          <div class="result-hero">
+            <div class="result-meta">
+              <span class="result-query" id="displayQuery">∫ f(x) dx</span>
+              <span class="equals-sign">=</span>
+            </div>
+            <div class="result-formula" id="displayResult">—</div>
+            <div class="result-actions">
+              <button class="copy-btn" id="copyResultBtn">📋 Copy Result</button>
+            </div>
+          </div>
+
+          <!-- Inside the Algorithm Drawer -->
+          <div class="trace-drawer">
+            <div class="drawer-header">
+              <div class="algorithm-badge-group">
+                <span class="aic-badge" id="displayAic">ALG-CODE</span>
+                <h3 class="algorithm-title" id="displayAlgorithmName">Algorithm Name</h3>
+              </div>
+            </div>
+
+            <p class="algorithm-desc" id="displayAlgorithmDesc">Algorithm description goes here.</p>
+
+            <!-- Cascade Timeline / Steps -->
+            <div class="cascade-section">
+              <h4>Internal Heuristic Cascade:</h4>
+              <div class="cascade-timeline" id="cascadeTimeline">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Expandable Call Tree -->
+            <div class="call-tree-section">
+              <div class="tree-header">
+                <h4>Common Lisp Execution Tree:</h4>
+                <button class="toggle-tree-btn" id="toggleTreeBtn">Expand Full Tree</button>
+              </div>
+              <div class="call-tree-viewer" id="callTreeViewer">
+                <!-- Tree rendered here -->
+              </div>
+            </div>
+
+            <!-- Raw Trace Accordion -->
+            <details class="raw-trace-details">
+              <summary>View Raw Maxima Lisp Trace Output</summary>
+              <pre class="raw-trace-pre" id="rawTracePre"></pre>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p><b>MaxCalc</b> &mdash; An open-source research interface from <i>The Middle Way Mathematics Foundation</i>.</p>
+    </footer>
+  </div>
+
+  <script src="premined.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
