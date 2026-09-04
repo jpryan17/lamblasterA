@@ -405,9 +405,21 @@ body {
   border-color: #3b82f6;
 }
 
-/* Action Bar */
+.chip.active {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  color: #ffffff;
+  border-color: #818cf8;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+  font-weight: 600;
+}
+
+/* Action Bar (Hidden in Static Showcase Mode) */
 .action-bar {
   display: flex;
+}
+
+body.static-mode .action-bar {
+  display: none !important;
 }
 
 .btn-primary {

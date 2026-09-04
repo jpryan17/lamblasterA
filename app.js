@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const res = await fetch("/api/health");
       if (res.ok) {
         isOnline = true;
+        document.body.classList.remove("static-mode");
         serverStatusBadge.textContent = "● Maxima Engine Online";
         serverStatusBadge.className = "badge badge-status";
         serverStatusBadge.title = "Connected to live Maxima SBCL backend on port 8000";
@@ -80,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch {
       isOnline = false;
+      document.body.classList.add("static-mode");
       serverStatusBadge.textContent = "○ Static Showcase Mode";
       serverStatusBadge.style.backgroundColor = "#1e1b4b";
       serverStatusBadge.style.color = "#a5b4fc";
@@ -99,6 +101,16 @@ document.addEventListener("DOMContentLoaded", () => {
       currentMode = btn.dataset.mode;
       const targetView = document.getElementById(`view${capitalize(currentMode)}`);
       if (targetView) targetView.classList.add("active");
+
+      // In static mode, automatically sync to the matching preset chip
+      if (!isOnline) {
+        const matchingChip = document.querySelector(`.chip[data-mode="${currentMode}"]`) ||
+          (currentMode === "exp" ? document.querySelector('.chip[data-expr*="exp(x^2)"]') : null);
+        if (matchingChip && !matchingChip.classList.contains("active")) {
+          matchingChip.click();
+          return;
+        }
+      }
 
       updateLivePreview();
     });
@@ -168,9 +180,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Preset Chips ---
   presetChips.forEach(chip => {
     chip.addEventListener("click", () => {
+      presetChips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+
       const mode = chip.dataset.mode;
       const tabTarget = document.getElementById(`tab${capitalize(mode)}`);
-      if (tabTarget) tabTarget.click();
+      if (tabTarget && !tabTarget.classList.contains("active")) {
+        tabBtns.forEach(b => b.classList.remove("active"));
+        templateViews.forEach(v => v.classList.remove("active"));
+        tabTarget.classList.add("active");
+        currentMode = mode;
+        const targetView = document.getElementById(`view${capitalize(currentMode)}`);
+        if (targetView) targetView.classList.add("active");
+      }
 
       if (mode === "rational") {
         ratNum.value = chip.dataset.num || "1";
@@ -190,6 +212,12 @@ document.addEventListener("DOMContentLoaded", () => {
       handleCompute();
     });
   });
+
+  // Auto-select and compute the first preset chip on startup!
+  const defaultInitialChip = document.querySelector(".chip");
+  if (defaultInitialChip) {
+    defaultInitialChip.click();
+  }
 
   // --- Calculate & Mine API Call ---
   async function handleCompute() {
